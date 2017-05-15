@@ -109,7 +109,7 @@ EXAMPLE USAGE:
 > localData.size( 'key4' )
 
 -->  4
-<i>total codepoints in value (not length, not graphemes)</i> 
+<br><i>total codepoints in value (not length, not graphemes)</i> 
 
 
 
@@ -119,12 +119,12 @@ EXAMPLE USAGE:
 > localData.forceget( 'non-existing key' )
 
 -->  null
-<i>same as localStorage.getItem( 'non-existing key' )</i>
+<br><i>same as localStorage.getItem( 'non-existing key' )</i>
 
 > localData.get( 'non-existing key' )
 
 -->  undefined
-<i>the key is undefined because it does not exist, it is NOT null</i>
+<br><i>the key is undefined because it does not exist, it is NOT null</i>
 
 > localData.chopget( 'non-existing key' )
 
@@ -158,18 +158,26 @@ EXAMPLE USAGE:
 
 
 
+<br>&nbsp;<br>
 <b> set/get key, bypassing any data type embedding (via localStorage API)</b>
 > localData.forceset( 'api', 13579 )
+
 // prep;  all values are stored as strings
+
 > localData.forceget( 'api' )
+
 -->  "13579"
+
 > localData.forceget( 'key6' )
+
 -->  ""2017-05-01T18:39:11.443Z""
 
 
 
+<br>&nbsp;<br>
 <b> find duplicate key values</b>
 > localData.set( 'key8', 'data' )
+
 // prep; now key4 & key8 have the same values
 
 > localData.countdupes()
@@ -177,16 +185,19 @@ EXAMPLE USAGE:
 > localData.showdupes()
 -->  ["data"]; this key value occurs twice minimum
 
+<br>&nbsp;<br>
 // handling duplicates; localData vs localStorage API
 > localData.forceset( 'dupekey1', 1234 )                      
 // prep; will be stored as a string
 > localData.forceset( 'dupekey2', '1234' )                    
 // prep; will be stored as a string
 
+<br>&nbsp;<br>
 // look for duplicates (among localStorage keys)
 > localData.showdupes()                                       
 -->  [1234, "data"]
 
+<br>&nbsp;<br>
 // remove a key
 > localData.remove( 'dupekey1' )                              
 // prep
@@ -195,15 +206,18 @@ EXAMPLE USAGE:
 > localData.remove( 'key8' )                                  
 // prep
 
+<br>&nbsp;<br>
 > localData.set( 'dupekey3', 1234 )                           
 // stored as string, but recognized as integer
 > localData.set( 'dupekey4', '1234' )                         
 // stored and recognized as string
 
+<br>&nbsp;<br>
 // look for duplicates (among localData types)
 > localData.showdupes()                                       
 -->  [];  since data types are respected, no dupes were found                
 
+<br>&nbsp;<br>
 > localData.set( 'dupekey1', 1234 )                           
 // prep
 > localData.set( 'dupekey2', '1234' )                         
@@ -211,6 +225,7 @@ EXAMPLE USAGE:
 > localData.set( 'key8', 'data' )                             
 // prep
 
+<br>&nbsp;<br>
 > localData.countdupes()                                      
 -->  3
 > localData.listdupes()                                       
@@ -228,21 +243,25 @@ EXAMPLE USAGE:
 
 
 
+<br>&nbsp;<br>
 <b> check if key exists</b>
 > localData.haskey( 'dupekey3' )                              
 -->  true
 
 
 
+<br>&nbsp;<br>
 <b> check if value exists</b>
 > localData.hasval( 1234 )                                   
 -->  true;  checks value AND data type
 
+<br>&nbsp;<br>
 > localData.set( 'testkey', 89.221 )                          
 // prep
 > localData.hasval( '89.221' )                                
 -->  false;  the float (number) type does not match the string type
 
+<br>&nbsp;<br>
 > localData.forceset( 'LSkey1', 98765 )                       
 // prep; set key value using localStorage API (handled as string)
 > localData.forcehasval( 98765 )                              
@@ -250,6 +269,7 @@ EXAMPLE USAGE:
 > localData.forcehasval( '98765' )                            
 -->  true;  localStorage API does not discern between data types
 
+<br>&nbsp;<br>
 > localData.hasval( 98765 )                                   
 -->  true;  localData attempts to coerce any value not explicity set by it 
 > localData.hasval( '98765' )                                 
@@ -257,6 +277,7 @@ EXAMPLE USAGE:
 
 
 
+<br>&nbsp;<br>
 <b> show key's value type</b>
 > localData.showtype( 'dupekey3' )                            
 -->  "integer"
@@ -277,6 +298,7 @@ EXAMPLE USAGE:
 
 
 
+<br>&nbsp;<br>
 <b> boolean check a key's value type</b>
 > localData.isArray( 'key5' )                                 
 -->  true
@@ -287,18 +309,21 @@ EXAMPLE USAGE:
 
 
 
+<br>&nbsp;<br>
 <b> query by key value, not key name (returns first found)</b>
 > localData.showkey( 1234 )                                   
 -->  "dupekey1"
 > localData.showkey( '1234' )                                 
 -->  "dupekey2"
 
+<br>&nbsp;<br>
 // returns all found
 > localData.showkeys( 1234 )                                  
 -->  ["dupekey1", "dupekey3"]
 
 
 
+<br>&nbsp;<br>
 <b> obfuscate key values using global scramble key</b>
 > localData.getscramblekey()                                  
 -->  123456789; default global scramble key (integer)
@@ -307,31 +332,37 @@ EXAMPLE USAGE:
 > localData.safeget( 'ss1' )                                  
 -->  "007"
 
+<br>&nbsp;<br>
 > localData.setscramblekey( new Date() )                      
 // set new scramble to the date now, as date object
 > localData.getscramblekey()                                  
 -->  Mon May 01 2017 22:28:11 GMT-0400 (Eastern Daylight Time)
 
+<br>&nbsp;<br>
 > localData.safeget( 'ss1' )                                  
 -->  (garbled data); different global scramble key used for retrieval
 
+<br>&nbsp;<br>
 // obfuscate using individual scramble key
 > localData.safeset( 'ss2', 'test', {'scramble': ['key']} )   
 -->  (stored scrambled); scramble keys can be any value and of any data type
 > localData.safeget( 'ss2', {'scramble': ['key']} )           
 -->  "test"
 
+<br>&nbsp;<br>
 > localData.safeget( 'ss1', 123456789 )                       
 ->  "007"
 
 
 
+<br>&nbsp;<br>
 <b> safeget will not retrieve an unscrambled key</b>
 > localData.safeget( 'key4' )                                 
 -->  (garbled data)
 
 
 
+<br>&nbsp;<br>
 <b> renaming keys</b>
 // non-scambled keys can safely be renamed 
 > localData.rename( 'key4', 'key4-renamed' )                  
@@ -341,6 +372,7 @@ EXAMPLE USAGE:
 > localData.get( 'key4-renamed' )                             
 -->  "data"
 
+<br>&nbsp;<br>
 // scrambled keys cannot be renamed; the key name and the value produce the obfuscation
 > localData.rename( 'ss1', 'ss1-renamed' )                    
 // key ss1 no longer exists
@@ -349,6 +381,7 @@ EXAMPLE USAGE:
 > localData.safeget( 'ss1-renamed', 123456789 )               
 -->  (garbled data); this was the correct scramble key for the 'ss1' key, but not for the 'ss1-renamed' key
 
+<br>&nbsp;<br>
 > localData.rename( 'ss1-renamed', 'ss1' )                    
 // key ss1-renamed no longer exists
 > localData.safeget( 'ss1-renamed' )                          
@@ -358,6 +391,7 @@ EXAMPLE USAGE:
 
 
 
+<br>&nbsp;<br>
 <b> how localDataStorage reacts to values set via the localStorage API</b>
 > localData.forceset( 'lsAPIkey', 77.042 )                    
 // prep
@@ -370,6 +404,7 @@ EXAMPLE USAGE:
 
 
 
+<br>&nbsp;<br>
 <b> there are several ways to track memory usage</b>
 // show memory required to store key value
 > localData.showtype( 'dupekey4' )                            
@@ -383,6 +418,7 @@ EXAMPLE USAGE:
 > localData.valbytesall( 'dupekey4' )                         
 -->  "12.00 bytes";  now we include the 2-byte embedded data type marker (total data) 
 
+<br>&nbsp;<br>
 // show memory required to store key name
 > localData.keybytes( 'dupekey4' )                            
 -->  "48.00 bytes";  the prefix ('passphrase.life' + '.') is 32 bytes, plus key name is 16 bytes more ('dupekey4' ), summing 48 bytes
@@ -391,12 +427,14 @@ EXAMPLE USAGE:
 > localData.bytes( 'dupekey4' )                               
 -->  "56.00 bytes";  8 bytes for raw value and 48 bytes for name, i.e. valbytes() + keybytes()
 
+<br>&nbsp;<br>
 // key name + total value (include value marker byte)
 > localData.bytesall( 'dupekey4' )                            
 -->  "60.00 bytes";  now includes the embedded data type marker (it's 2 bytes, stored as 4)
 
 
 
+<br>&nbsp;<br>
 <b> memory usage of compressed key values</b>
 > localData.set( 'crunchedkey', 'this is some test data' )    
 -->  prep; only strings can be compressed
@@ -409,6 +447,7 @@ EXAMPLE USAGE:
 
 
 
+<br>&nbsp;<br>
 <b> unicode-safe data storage</b>
 > localData.set( 'unicodeKey1', '😀' )                        
 -->  prep;
@@ -421,6 +460,7 @@ EXAMPLE USAGE:
 > localData.valbytesall( 'unicodeKey1' )                     
 --> "12.00 bytes"
 
+<br>&nbsp;<br>
 > localData.set( 'unicodeKey2', '🕔🔚🔈🔔♅' )                     
 -->  prep; 5 graphemes (5 codepoints in 19 bytes)          
 > localData.get( 'unicodeKey2' )                              
@@ -432,11 +472,13 @@ EXAMPLE USAGE:
 > localData.valbytesall( 'unicodeKey2' )                      
 -->  "42.00 bytes"
 
+<br>&nbsp;<br>
 // emojis used for key name, key value & individual scramble key
 > localData.safeset( '👊🌐🔷', '💕🚻', '🔙' )
 > localData.safeget( '👊🌐🔷', '🔙' )                             
 -->  "💕🚻"
 
+<br>&nbsp;<br>
 // emojis used in global scramble key
 > localData.setscramblekey( '🎵🎶🔶🔻' )
 > localData.safeset( 'Ron Wyden', '.@NSAGov 💻📱📡📞🔎👂👀🔚 #EndThisDragnet' )
@@ -445,12 +487,14 @@ EXAMPLE USAGE:
 
 
 
+<br>&nbsp;<br>
 <b> get tally of keys</b>
 > localData.keys()                                            
 -->  24
 
 
 
+<br>&nbsp;<br>
 <b> delete all prefixed keys in the domain (unprefixed localStorage keys are not affected)</b>
 > localStorage.setItem( 'API-key', 'test data' )              
 -->  prep; create a key in the same domain outside localData
