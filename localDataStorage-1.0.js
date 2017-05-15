@@ -71,8 +71,6 @@ var localDataStorage = function( _specifiedPrefix ) {
             , _getNumber  = function() { return String.fromCodePoint( 142 ); }
             , _getBoolean = function() { return String.fromCodePoint( 143 ); }
             , _getObject  = function() { return String.fromCodePoint( 144 ); }
-            //, _getObject  = function() { return String.fromCodePoint( 157 ); }
-            // 128, 129, 141-144, 149, 157, 158
 
             , _scrambleKey = 123456789
 
@@ -268,44 +266,6 @@ var localDataStorage = function( _specifiedPrefix ) {
                 ;
                 while( _val > 1024 ) { _sizeUnit++; _val /= 1024; }
                 return _val.toFixed( 2 ) + " " + _units[ _sizeUnit ];
-            }
-
-            // https://stackoverflow.com/questions/1129216/sort-array-of-objects-by-string-property-value-in-javascript/4760279#4760279
-            // helper sort function
-            , __dynamicSort = function( property ) {
-                var sortOrder = 1;
-                if( property[ 0 ] === "-" ) {
-                    sortOrder = -1;
-                    property = property.substr( 1 );
-                }
-
-                return function( a, b ) {
-                    var result = ( a[ property ] < b[ property ] ) ? -1 : ( a[ property ] > b[ property ]) ? 1 : 0;
-                    return result * sortOrder;
-                }
-            }
-
-            // helper sort function
-            , __dynamicSortMultiple = function() {
-                /*
-                * save the arguments object as it will be overwritten
-                * note that arguments object is an array-like object
-                * consisting of the names of the properties to sort by
-                */
-                var props = arguments;
-            
-                return function ( obj1, obj2 ) {
-                    var i = 0, result = 0, numberOfProperties = props.length;
-                    /* try getting a different result from 0 (equal)
-                    * as long as we have extra properties to compare
-                    */
-                    while( result === 0 && i < numberOfProperties ) {
-                        result = __dynamicSort( props[ i ] )( obj1, obj2 );
-                        i++;
-                    }
-                
-                    return result;
-                }
             }
 
             // in-place array shuffle (no copy made)
