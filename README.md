@@ -565,6 +565,7 @@ EXAMPLE USAGE:
 -->  "48.00 bytes"
 <br><i>the prefix ('passphrase.life' + '.') is 32 bytes, plus key name is 16 bytes more ('dupekey4' ), summing 48 bytes</i>
 
+<br>&nbsp;<br>
 // show memory used by key-value pair combo
 
 // key name + raw value
