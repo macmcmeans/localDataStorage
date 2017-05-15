@@ -60,36 +60,43 @@ EXAMPLE USAGE:
 
 <b> typical set/get calls (data types are respected and returned transparently)</b>
 > localData.set( 'key1', 19944.25 )
+
 > localData.get( 'key1' )                                     
 
 -->  19944.25
 
 > localData.set( 'key2', 2519944 )
+
 > localData.get( 'key2' )                                     
 
 -->  2519944
 
 > localData.set( 'key3', true )
+
 > localData.get( 'key3' )                                     
 
 -->  true
 
 > localData.set( 'key4', 'data' )
+
 > localData.get( 'key4' )                                     
 
 -->  "data"
 
 > localData.set( 'key5', [1,2,3,4,9] )
+
 > localData.get( 'key5' )                                     
 
 -->  [1, 2, 3, 4, 9]
 
 > localData.set( 'key6', new Date() )
+
 > localData.get( 'key6' )                                     
 
 -->  Mon May 01 2017 14:39:11 GMT-0400 (Eastern Daylight Time)
 
 > localData.set( 'key7', {'a': [1,2,3] } )
+
 > localData.get( 'key7' )                                     
 
 -->  Object {a: Array(3)}
