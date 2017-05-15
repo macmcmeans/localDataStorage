@@ -162,7 +162,7 @@ EXAMPLE USAGE:
 <b> set/get key, bypassing any data type embedding (via localStorage API)</b>
 > localData.forceset( 'api', 13579 )
 
-// prep;  all values are stored as strings
+<i>prep;  all values are stored as strings</i>
 
 > localData.forceget( 'api' )
 
@@ -178,7 +178,7 @@ EXAMPLE USAGE:
 <b> find duplicate key values</b>
 > localData.set( 'key8', 'data' )
 
-// prep; now key4 & key8 have the same values
+<i>prep; now key4 and key8 have the same values</i>
 
 > localData.countdupes()
 
@@ -193,11 +193,11 @@ EXAMPLE USAGE:
 
 > localData.forceset( 'dupekey1', 1234 )                      
 
-// prep; will be stored as a string
+<i>prep; will be stored as a string</i>
 
 > localData.forceset( 'dupekey2', '1234' )                    
 
-// prep; will be stored as a string
+<i>prep; will be stored as a string</i>
 
 <br>&nbsp;<br>
 // look for duplicates (among localStorage keys)
@@ -211,24 +211,24 @@ EXAMPLE USAGE:
 
 > localData.remove( 'dupekey1' )                              
 
-// prep
+<i>prep</i>
 
 > localData.remove( 'dupekey2' )                              
 
-// prep
+<i>prep</i>
 
 > localData.remove( 'key8' )                                  
 
-// prep
+<i>prep</i>
 
 <br>&nbsp;<br>
 > localData.set( 'dupekey3', 1234 )                           
 
-// stored as string, but recognized as integer
+<i>stored as string, but recognized as integer</i>
 
 > localData.set( 'dupekey4', '1234' )                         
 
-// stored and recognized as string
+<i>stored and recognized as string</i>
 
 <br>&nbsp;<br>
 // look for duplicates (among localData types)
@@ -241,15 +241,15 @@ EXAMPLE USAGE:
 <br>&nbsp;<br>
 > localData.set( 'dupekey1', 1234 )                           
 
-// prep
+<i>prep</i>
 
 > localData.set( 'dupekey2', '1234' )                         
 
-// prep
+<i>prep</i>
 
 > localData.set( 'key8', 'data' )                             
 
-// prep
+<i>prep</i>
 
 <br>&nbsp;<br>
 > localData.countdupes()                                      
@@ -300,7 +300,7 @@ EXAMPLE USAGE:
 <br>&nbsp;<br>
 > localData.set( 'testkey', 89.221 )                          
 
-// prep
+<i>prep</i>
 
 > localData.hasval( '89.221' )                                
 
@@ -310,7 +310,6 @@ EXAMPLE USAGE:
 <br>&nbsp;<br>
 > localData.forceset( 'LSkey1', 98765 )                       
 
-// prep
 <br><i>set key value using localStorage API (handled as string)</i>
 
 > localData.forcehasval( 98765 )                              
@@ -363,7 +362,7 @@ EXAMPLE USAGE:
 
 > localData.set( 'key7', {'local' : ['d', 'a', 't', 'a']} )   
 
-// prep
+<i>prep</i>
 
 > localData.showtype( 'key7' )                                
 
@@ -410,7 +409,8 @@ EXAMPLE USAGE:
 <b> obfuscate key values using global scramble key</b>
 > localData.getscramblekey()                                  
 
--->  123456789; default global scramble key (integer)
+-->  123456789
+<br><i>default global scramble key (integer)</i>
 
 > localData.safeset( 'ss1', '007' )                           
 
@@ -432,14 +432,16 @@ EXAMPLE USAGE:
 <br>&nbsp;<br>
 > localData.safeget( 'ss1' )                                  
 
--->  (garbled data); different global scramble key used for retrieval
+-->  (garbled data)
+<br><i>different global scramble key used for retrieval</i>
 
 <br>&nbsp;<br>
 // obfuscate using individual scramble key
 
 > localData.safeset( 'ss2', 'test', {'scramble': ['key']} )   
 
--->  (stored scrambled); scramble keys can be any value and of any data type
+-->  (stored scrambled)
+<br><i>scramble keys can be any value and of any data type</i>
 
 > localData.safeget( 'ss2', {'scramble': ['key']} )           
 
@@ -477,7 +479,7 @@ EXAMPLE USAGE:
 -->  "data"
 
 <br>&nbsp;<br>
-// scrambled keys cannot be renamed; the key name and the value produce the obfuscation
+// scrambled keys cannot be renamed, the key name and the value produce the obfuscation
 
 > localData.rename( 'ss1', 'ss1-renamed' )                    
 
