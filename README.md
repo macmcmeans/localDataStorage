@@ -45,10 +45,12 @@ Multiple instances of localDatStorage can be run against the same domain at the 
 multi-byte unicode-safe. 
 
 
+<br>&nbsp;<br>
 <b>DEPENDENCIES:</b>
 None.
 
 
+<br>&nbsp;<br>
 <b>EXAMPLE USAGE:</b>
 
 <b> Create an instance of localDataStorage using the specified key name prefix</b>
