@@ -533,7 +533,9 @@ EXAMPLE USAGE:
 
 <br>&nbsp;<br>
 <b> there are several ways to track memory usage</b>
+
 // show memory required to store key value
+
 > localData.showtype( 'dupekey4' )                            
 
 -->  "string";
