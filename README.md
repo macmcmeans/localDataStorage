@@ -194,11 +194,11 @@ EXAMPLE USAGE:
 
 > localData.forceset( 'dupekey1', 1234 )                      
 
-<i>prep; will be stored as a string</i>
+<i>will be stored as a string</i>
 
 > localData.forceset( 'dupekey2', '1234' )                    
 
-<i>prep; will be stored as a string</i>
+<i>will be stored as a string</i>
 
 <br>&nbsp;<br>
 // look for duplicates (among localStorage keys)
@@ -536,7 +536,7 @@ EXAMPLE USAGE:
 // show memory required to store key value
 > localData.showtype( 'dupekey4' )                            
 
--->  "string";  prep
+-->  "string";
 
 > localData.get( 'dupekey4' )                                 
 
@@ -584,8 +584,7 @@ EXAMPLE USAGE:
 <br>&nbsp;<br>
 <b> memory usage of compressed key values</b>
 > localData.set( 'crunchedkey', 'this is some test data' )    
-
--->  prep; only strings can be compressed
+<br><i>only strings can be compressed</i>
 
 > localData.size( 'crunchedkey' )                             
 
@@ -628,7 +627,7 @@ EXAMPLE USAGE:
 <br>&nbsp;<br>
 > localData.set( 'unicodeKey2', '🕔🔚🔈🔔♅' )                     
 
--->  prep; 5 graphemes (5 codepoints in 19 bytes)          
+<br><i>storing 5 graphemes (5 codepoints in 19 bytes)</i>          
 
 > localData.get( 'unicodeKey2' )                              
 
@@ -647,7 +646,7 @@ EXAMPLE USAGE:
 -->  "42.00 bytes"
 
 <br>&nbsp;<br>
-// emojis used for key name, key value & individual scramble key
+// emojis used for key name, key value and individual scramble key
 
 > localData.safeset( '👊🌐🔷', '💕🚻', '🔙' )
 
@@ -679,8 +678,7 @@ EXAMPLE USAGE:
 <br>&nbsp;<br>
 <b> delete all prefixed keys in the domain (unprefixed localStorage keys are not affected)</b>
 > localStorage.setItem( 'API-key', 'test data' )              
-
--->  prep; create a key in the same domain outside localData
+<br><i>create a key in the same domain outside localData</i>
 
 > localData.clear()                                           
 
