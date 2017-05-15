@@ -629,9 +629,9 @@ EXAMPLE USAGE:
 --> "12.00 bytes"
 
 <br>&nbsp;<br>
-> localData.set( 'unicodeKey2', '🕔🔚🔈🔔♅' )                     
+> localData.set( 'unicodeKey2', '🕔🔚🔈🔔♅' )
 
-<br><i>storing 5 graphemes (5 codepoints in 19 bytes)</i>          
+<i>storing 5 graphemes (5 codepoints in 19 bytes)</i>          
 
 > localData.get( 'unicodeKey2' )                              
 
