@@ -103,10 +103,12 @@ EXAMPLE USAGE:
 
 
 
+
 <b> get the "size" of a key's value (codepoints)</b>
 > localData.size( 'key4' )                                    
 
 -->  4; total codepoints in value (not length, not graphemes) 
+
 
 
 
