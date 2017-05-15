@@ -310,7 +310,6 @@ EXAMPLE USAGE:
 
 <br>&nbsp;<br>
 > localData.forceset( 'LSkey1', 98765 )                       
-
 <br><i>set key value using localStorage API (handled as string)</i>
 
 > localData.forcehasval( 98765 )                              
