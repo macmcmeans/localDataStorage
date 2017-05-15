@@ -41,7 +41,7 @@ prefixed keys is strongly encouraged, and localDataStorage will only read/write/
 Unlike the HTML5 API, there is no method in this interface to delete all keys in the domain, only all
 prefixed keys.
 
-Multiple instances of localDatStorage can be run against the same domain at the same time. It is
+Multiple instances of localDataStorage can be run against the same domain at the same time. It is
 multi-byte unicode-safe. 
 
 
