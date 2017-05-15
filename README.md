@@ -51,13 +51,14 @@ None.
 
 EXAMPLE USAGE:
 
-// Create an instance of localDataStorage using the specified key name prefix
+<b> Create an instance of localDataStorage using the specified key name prefix</b>
 > localData = localDataStorage( 'passphrase.life' )
+
 -->  Instantiated. Prefix adds 16.00 bytes to every key name (stored using 32.00 bytes.   
 
 
 
-// typical set/get calls (data types are respected and returned transparently)
+<b> typical set/get calls (data types are respected and returned transparently)</b>
 > localData.set( 'key1', 19944.25 )
 > localData.get( 'key1' )                                     
 -->  19944.25
@@ -88,56 +89,56 @@ EXAMPLE USAGE:
 
 
 
-// get the "size" of a key's value (codepoints)
+<b> get the "size" of a key's value (codepoints)</b>
 > localData.size( 'key4' )                                    
 -->  4; total codepoints in value (not length, not graphemes) 
 
 
 
-// results when querying a non-existing key
-> localData.forceget( 'non-existing key' )                    
+<b> results when querying a non-existing key</b>
+> localData.forceget( 'non-existing key' )
 -->  null; (same as localStorage.getItem( 'non-existing key' ))
-> localData.get( 'non-existing key' )                         
+> localData.get( 'non-existing key' )
 -->  undefined; (the key is undefined because it does not exist, it is NOT null)
-> localData.chopget( 'non-existing key' )                     
+> localData.chopget( 'non-existing key' )
 -->  undefined
-> localData.safeget( 'non-existing key' )                     
+> localData.safeget( 'non-existing key' )
 -->  undefined
 
 
 
-// read then delete a key
-> x = localData.chopget( 'key7' )                             
+<b> read then delete a key</b>
+> x = localData.chopget( 'key7' )
 -->  Object {a: Array(3)}
-> localData.get( 'key7' )                                    
+> localData.get( 'key7' )
 -->  undefined
 
 
 
-// don't overwrite an existing key
+<b> don't overwrite an existing key</b>
 > localData.softset( 'key4', 'new data' )
-> localData.get( 'key4' )                                     
+> localData.get( 'key4' )
 -->  "data"   
 
 
 
-// set/get key, bypassing any data type embedding (via localStorage API)
-> localData.forceset( 'api', 13579 )                         
+<b> set/get key, bypassing any data type embedding (via localStorage API)</b>
+> localData.forceset( 'api', 13579 )
 // prep;  all values are stored as strings
-> localData.forceget( 'api' )                                 
+> localData.forceget( 'api' )
 -->  "13579"
-> localData.forceget( 'key6' )                                
+> localData.forceget( 'key6' )
 -->  ""2017-05-01T18:39:11.443Z""
 
 
 
-// find duplicate key values
-> localData.set( 'key8', 'data' )                             
+<b> find duplicate key values</b>
+> localData.set( 'key8', 'data' )
 // prep; now key4 & key8 have the same values
 
-> localData.countdupes()                                      
+> localData.countdupes()
 -->  1
-> localData.showdupes()                                      
+> localData.showdupes()
 -->  ["data"]; this key value occurs twice minimum
 
 // handling duplicates; localData vs localStorage API
@@ -191,13 +192,13 @@ EXAMPLE USAGE:
 
 
 
-// check if key exists
+<b> check if key exists</b>
 > localData.haskey( 'dupekey3' )                              
 -->  true
 
 
 
-// check if value exists
+<b> check if value exists</b>
 > localData.hasval( 1234 )                                   
 -->  true;  checks value AND data type
 
@@ -220,7 +221,7 @@ EXAMPLE USAGE:
 
 
 
-// show key's value type
+<b> show key's value type</b>
 > localData.showtype( 'dupekey3' )                            
 -->  "integer"
 > localData.showtype( 'dupekey4' )                            
@@ -240,7 +241,7 @@ EXAMPLE USAGE:
 
 
 
-// boolean check a key's value type
+<b> boolean check a key's value type</b>
 > localData.isArray( 'key5' )                                 
 -->  true
 > localData.isFloat( 'testkey' )                              
@@ -250,7 +251,7 @@ EXAMPLE USAGE:
 
 
 
-// query by key value, not key name (returns first found)
+<b> query by key value, not key name (returns first found)</b>
 > localData.showkey( 1234 )                                   
 -->  "dupekey1"
 > localData.showkey( '1234' )                                 
@@ -262,7 +263,7 @@ EXAMPLE USAGE:
 
 
 
-// obfuscate key values using global scramble key
+<b> obfuscate key values using global scramble key</b>
 > localData.getscramblekey()                                  
 -->  123456789; default global scramble key (integer)
 > localData.safeset( 'ss1', '007' )                           
@@ -289,13 +290,13 @@ EXAMPLE USAGE:
 
 
 
-// safeget will not retrieve an unscrambled key
+<b> safeget will not retrieve an unscrambled key</b>
 > localData.safeget( 'key4' )                                 
 -->  (garbled data)
 
 
 
-// renaming keys
+<b> renaming keys</b>
 // non-scambled keys can safely be renamed 
 > localData.rename( 'key4', 'key4-renamed' )                  
 // key4 no longer exists
@@ -321,7 +322,7 @@ EXAMPLE USAGE:
 
 
 
-// how localDataStorage reacts to values set via the localStorage API
+<b> how localDataStorage reacts to values set via the localStorage API</b>
 > localData.forceset( 'lsAPIkey', 77.042 )                    
 // prep
 > localData.forceget( 'lsAPIkey' )                            
@@ -333,7 +334,7 @@ EXAMPLE USAGE:
 
 
 
-// there are several ways to track memory usage
+<b> there are several ways to track memory usage</b>
 // show memory required to store key value
 > localData.showtype( 'dupekey4' )                            
 -->  "string";  prep
@@ -360,7 +361,7 @@ EXAMPLE USAGE:
 
 
 
-// memory usage of compressed key values
+<b> memory usage of compressed key values</b>
 > localData.set( 'crunchedkey', 'this is some test data' )    
 -->  prep; only strings can be compressed
 > localData.size( 'crunchedkey' )                             
@@ -372,7 +373,7 @@ EXAMPLE USAGE:
 
 
 
-// unicode-safe data storage
+<b> unicode-safe data storage</b>
 > localData.set( 'unicodeKey1', '😀' )                        
 -->  prep;
 > localData.get( 'unicodeKey1' )                              
@@ -408,13 +409,13 @@ EXAMPLE USAGE:
 
 
 
-// get tally of keys
+<b> get tally of keys</b>
 > localData.keys()                                            
 -->  24
 
 
 
-// delete all prefixed keys in the domain (unprefixed localStorage keys are not affected)
+<b> delete all prefixed keys in the domain (unprefixed localStorage keys are not affected)</b>
 > localStorage.setItem( 'API-key', 'test data' )              
 -->  prep; create a key in the same domain outside localData
 > localData.clear()                                           
