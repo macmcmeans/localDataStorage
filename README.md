@@ -309,7 +309,7 @@ EXAMPLE USAGE:
 <br><i>the float (number) type does not match the string type</i>
 
 <br>&nbsp;<br>
-> localData.forceset( 'LSkey1', 98765 )                       
+> localData.forceset( 'LSkey1', 98765 )
 <br><i>set key value using localStorage API (handled as string)</i>
 
 > localData.forcehasval( 98765 )                              
