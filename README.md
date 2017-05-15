@@ -106,21 +106,25 @@ EXAMPLE USAGE:
 
 <br>&nbsp;<br>
 <b> get the "size" of a key's value (codepoints)</b>
-> localData.size( 'key4' )                                    
+> localData.size( 'key4' )
 
--->  4; total codepoints in value (not length, not graphemes) 
+-->  4
+<i>total codepoints in value (not length, not graphemes)</i> 
 
 
 
 
+<br>&nbsp;<br>
 <b> results when querying a non-existing key</b>
 > localData.forceget( 'non-existing key' )
 
--->  null; (same as localStorage.getItem( 'non-existing key' ))
+-->  null
+<i>same as localStorage.getItem( 'non-existing key' )</i>
 
 > localData.get( 'non-existing key' )
 
--->  undefined; (the key is undefined because it does not exist, it is NOT null)
+-->  undefined
+<i>the key is undefined because it does not exist, it is NOT null</i>
 
 > localData.chopget( 'non-existing key' )
 
