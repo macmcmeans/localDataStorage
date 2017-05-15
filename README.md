@@ -57,7 +57,7 @@ EXAMPLE USAGE:
 -->  Instantiated. Prefix adds 16.00 bytes to every key name (stored using 32.00 bytes.   
 
 
-
+<br>&nbsp;<br>
 <b> typical set/get calls (data types are respected and returned transparently)</b>
 > localData.set( 'key1', 19944.25 )
 
@@ -104,6 +104,7 @@ EXAMPLE USAGE:
 
 
 
+<br>&nbsp;<br>
 <b> get the "size" of a key's value (codepoints)</b>
 > localData.size( 'key4' )                                    
 
@@ -116,29 +117,39 @@ EXAMPLE USAGE:
 > localData.forceget( 'non-existing key' )
 
 -->  null; (same as localStorage.getItem( 'non-existing key' ))
+
 > localData.get( 'non-existing key' )
 
 -->  undefined; (the key is undefined because it does not exist, it is NOT null)
+
 > localData.chopget( 'non-existing key' )
 
 -->  undefined
+
 > localData.safeget( 'non-existing key' )
 
 -->  undefined
 
 
 
+<br>&nbsp;<br>
 <b> read then delete a key</b>
 > x = localData.chopget( 'key7' )
+
 -->  Object {a: Array(3)}
+
 > localData.get( 'key7' )
+
 -->  undefined
 
 
 
+<br>&nbsp;<br>
 <b> don't overwrite an existing key</b>
 > localData.softset( 'key4', 'new data' )
+
 > localData.get( 'key4' )
+
 -->  "data"   
 
 
