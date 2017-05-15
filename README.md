@@ -162,7 +162,7 @@ EXAMPLE USAGE:
 <b> set/get key, bypassing any data type embedding (via localStorage API)</b>
 > localData.forceset( 'api', 13579 )
 
-<i>prep;  all values are stored as strings</i>
+<i>all values are stored as strings</i>
 
 > localData.forceget( 'api' )
 
@@ -178,7 +178,7 @@ EXAMPLE USAGE:
 <b> find duplicate key values</b>
 > localData.set( 'key8', 'data' )
 
-<i>prep; now key4 and key8 have the same values</i>
+<i>now key4 and key8 have the same values</i>
 
 > localData.countdupes()
 
