@@ -587,7 +587,8 @@ EXAMPLE USAGE:
 <br>&nbsp;<br>
 <b> memory usage of compressed key values</b>
 > localData.set( 'crunchedkey', 'this is some test data' )    
-<br><i>only strings can be compressed</i>
+
+<i>only strings can be compressed</i>
 
 > localData.size( 'crunchedkey' )                             
 
