@@ -186,7 +186,8 @@ EXAMPLE USAGE:
 
 > localData.showdupes()
 
--->  ["data"]; this key value occurs twice minimum
+-->  ["data"]
+<br><i>this key value occurs twice minimum</i>
 
 <br>&nbsp;<br>
 // handling duplicates; localData vs localStorage API
