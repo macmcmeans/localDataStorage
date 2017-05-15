@@ -45,11 +45,11 @@ Multiple instances of localDatStorage can be run against the same domain at the 
 multi-byte unicode-safe. 
 
 
-DEPENDENCIES:
+<b>DEPENDENCIES:</b>
 None.
 
 
-EXAMPLE USAGE:
+<b>EXAMPLE USAGE:</b>
 
 <b> Create an instance of localDataStorage using the specified key name prefix</b>
 > localData = localDataStorage( 'passphrase.life' )
@@ -681,8 +681,9 @@ EXAMPLE USAGE:
 
 <br>&nbsp;<br>
 <b> delete all prefixed keys in the domain (unprefixed localStorage keys are not affected)</b>
-> localStorage.setItem( 'API-key', 'test data' )              
-<br><i>create a key in the same domain outside localData</i>
+> localStorage.setItem( 'API-key', 'test data' )
+
+<i>create a key in the same domain outside localData</i>
 
 > localData.clear()                                           
 
@@ -701,5 +702,6 @@ EXAMPLE USAGE:
 
 
 
-TESTED:
+<br>&nbsp;<br>
+<b>TESTED:</b>
 1) Google Chrome on Win64
