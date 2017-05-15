@@ -52,13 +52,15 @@ None.
 EXAMPLE USAGE:
 
 // Create an instance of localDataStorage using the specified key name prefix
-> localData = localDataStorage( 'passphrase.life' )           -->  Instantiated. Prefix adds 16.00 bytes to every key name (stored using 32.00 bytes.   
+> localData = localDataStorage( 'passphrase.life' )
+-->  Instantiated. Prefix adds 16.00 bytes to every key name (stored using 32.00 bytes.   
 
 
 
 // typical set/get calls (data types are respected and returned transparently)
 > localData.set( 'key1', 19944.25 )
-> localData.get( 'key1' )                                     -->  19944.25
+> localData.get( 'key1' )                                     
+-->  19944.25
 
 > localData.set( 'key2', 2519944 )
 > localData.get( 'key2' )                                     -->  2519944
@@ -108,7 +110,7 @@ EXAMPLE USAGE:
 // set/get key, bypassing any data type embedding (via localStorage API)
 > localData.forceset( 'api', 13579 )                         // prep;  all values are stored as strings
 > localData.forceget( 'api' )                                 -->  "13579"
-> localData.forceget( 'key6' )                                -->  ""2017-05-01T18:39:11.443Z""
+> localData.forceget( 'key6' )                                -->  ""2017-05-01T18:39:11.443Z""
 
 
 
@@ -116,7 +118,7 @@ EXAMPLE USAGE:
 > localData.set( 'key8', 'data' )                             // prep; now key4 & key8 have the same values
 
 > localData.countdupes()                                      -->  1
-> localData.showdupes()                                       -->  ["data"]; this key value occurs twice minimum
+> localData.showdupes()                                       -->  ["data"]; this key value occurs twice minimum
 
 // handling duplicates; localData vs localStorage API
 > localData.forceset( 'dupekey1', 1234 )                      // prep; will be stored as a string
