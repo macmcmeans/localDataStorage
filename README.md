@@ -10,6 +10,7 @@ localDataStorage is an interface for the HTML5 localStorage API that endeavors t
 version 1.0.0<br>
 Author: William P. "Mac" McMeans<br>
 Date: 15 MAY 2017
+<br>&nbsp;<br>
 
 # Script tag usage
 ```
