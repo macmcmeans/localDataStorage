@@ -1,14 +1,14 @@
 # localDataStorage
-localDataStorage is an interface for the HTML5 localStorage API that endeavors to
+localDataStorage is an interface for the HTML5 localStorage API that endeavors to--
 1) respect native data types that are set/get to storage (not just strings),
 2) provide lightweight data obfuscation,
 3) automatically compress strings,
 4) facilitate query by key (name) as well as query by (key) value, and 
 5) encourage segmented shared storage within the same domain by prefixing keys.
 
-version 1.0.0
-Author: William P. "Mac" McMeans
-Date: 15 MAY 2017
+###### version 1.0.0
+###### Author: William P. "Mac" McMeans
+###### Date: 15 MAY 2017
 
 # Script tag usage
 ```
