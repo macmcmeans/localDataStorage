@@ -383,7 +383,7 @@ None.
 
 
 <br>&nbsp;<br>
-<b> boolean check a key's value type</b>
+<b> boolean check the data type of a key's value</b>
 > localData.isArray( 'key5' )                                 
 
 -->  true
@@ -418,7 +418,7 @@ None.
 
 
 <br>&nbsp;<br>
-<b> obfuscate key values using global scramble key</b>
+<b>using the global scramble key for obfuscation</b>
 > localData.getscramblekey()                                  
 
 -->  123456789
@@ -435,7 +435,7 @@ None.
 <br>&nbsp;<br>
 > localData.setscramblekey( new Date() )                      
 
-// set new scramble to the date now, as date object
+// set global scramble key to the current date, as date object
 
 > localData.getscramblekey()                                  
 
@@ -448,7 +448,7 @@ None.
 <br><i>different global scramble key used for retrieval</i>
 
 <br>&nbsp;<br>
-// obfuscate using individual scramble key
+// using an individual scramble key for obfuscation
 
 > localData.safeset( 'ss2', 'test', {'scramble': ['key']} )   
 
@@ -480,7 +480,7 @@ None.
 
 > localData.rename( 'key4', 'key4-renamed' )                  
 
-// key4 no longer exists
+<i>key4 no longer exists</i>
 
 > localData.get( 'key4' )                                     
 
@@ -491,11 +491,11 @@ None.
 -->  "data"
 
 <br>&nbsp;<br>
-// scrambled keys cannot be renamed, the key name and the value produce the obfuscation
+// scrambled keys cannot be renamed: the key name and the value together produce the obfuscation
 
 > localData.rename( 'ss1', 'ss1-renamed' )                    
 
-// key ss1 no longer exists
+<i>key ss1 no longer exists</i>
 
 > localData.safeget( 'ss1' )                                  
 
@@ -508,7 +508,7 @@ None.
 
 <br>&nbsp;<br>
 > localData.rename( 'ss1-renamed', 'ss1' )                    
-// key ss1-renamed no longer exists
+<i>key ss1-renamed no longer exists</i>
 
 > localData.safeget( 'ss1-renamed' )                          
 
@@ -524,7 +524,7 @@ None.
 <b> how localDataStorage reacts to values set via the localStorage API</b>
 > localData.forceset( 'lsAPIkey', 77.042 )                    
 
-// prep
+<i>always stored as a string by the native API</i>
 
 > localData.forceget( 'lsAPIkey' )                            
 
@@ -543,7 +543,7 @@ None.
 
 
 <br>&nbsp;<br>
-<b> there are several ways to track memory usage</b>
+<b>there are several ways to track memory usage</b>
 
 // show memory required to store key value
 
@@ -567,24 +567,24 @@ None.
 > localData.valbytesall( 'dupekey4' )                         
 
 -->  "12.00 bytes"
-<br><i>now we include the 2-byte embedded data type marker (total data)</i> 
+<br><i>now we include the 2-byte embedded marker (total data)</i> 
 
 <br>&nbsp;<br>
 // show memory required to store key name
 > localData.keybytes( 'dupekey4' )                            
 
 -->  "48.00 bytes"
-<br><i>the prefix ('passphrase.life' + '.') is 32 bytes, plus key name is 16 bytes more ('dupekey4' ), summing 48 bytes</i>
+<br><i>the prefix ('passphrase.life' + '.') is 32 bytes, plus key name is 16 bytes more ('dupekey4' ), yielding 48 bytes</i>
 
 <br>&nbsp;<br>
-// show memory used by key-value pair combo
+// show memory used by the key-value pair
 
 // key name + raw value
 
 > localData.bytes( 'dupekey4' )                               
 
 -->  "56.00 bytes"
-<br><i>8 bytes for raw value and 48 bytes for name, i.e. valbytes() + keybytes()</i>
+<br><i>8 bytes for raw value and 48 bytes for name, i.e. valbytes + keybytes</i>
 
 <br>&nbsp;<br>
 // key name + total value (include value marker byte)
@@ -596,10 +596,10 @@ None.
 
 
 <br>&nbsp;<br>
-<b> memory usage of compressed key values</b>
+<b> view memory usage of compressed key values</b>
 > localData.set( 'crunchedkey', 'this is some test data' )    
 
-<i>only strings can be compressed</i>
+<i>only strings can be compressed; other data types will ignore compression</i>
 
 > localData.size( 'crunchedkey' )                             
 
@@ -621,7 +621,7 @@ None.
 <b> unicode-safe data storage</b>
 > localData.set( 'unicodeKey1', '😀' )                        
 
--->  prep
+<i>storing an emoji; 1 grapheme (1 codepoint in 4 bytes)</i>          
 
 > localData.get( 'unicodeKey1' )                              
 
@@ -661,7 +661,7 @@ None.
 -->  "42.00 bytes"
 
 <br>&nbsp;<br>
-// emojis used for key name, key value and individual scramble key
+// using emojis for key name, key value and individual scramble key
 
 > localData.safeset( '👊🌐🔷', '💕🚻', '🔙' )
 
@@ -670,7 +670,7 @@ None.
 -->  "💕🚻"
 
 <br>&nbsp;<br>
-// emojis used in global scramble key
+// using emojis in the global scramble key
 
 > localData.setscramblekey( '🎵🎶🔶🔻' )
 
@@ -726,6 +726,6 @@ Redistribution and use in source and binary forms, with or without modification,
 
 2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
 
-3. Neither the name of localDataStorage.js nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+3. Neither the name of localDataStorage nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
