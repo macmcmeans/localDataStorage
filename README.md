@@ -12,7 +12,7 @@ Date: 15 MAY 2017
 
 # Script tag usage
 ```
-<script src="splaylist.js"></script>
+<script src="localDataStorage-1.0.min.js"></script>
 ```
 
 ## Application:
