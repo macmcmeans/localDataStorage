@@ -170,10 +170,10 @@ None.
 
 
 <br>&nbsp;<br>
-<b> set/get key, bypassing any data type embedding (via localStorage API)</b>
+<b> set/get key, bypassing any data type embedding, but still observing key prefixes</b>
 > localData.forceset( 'api', 13579 )
 
-<i>all values are stored as strings</i>
+<i>all values are stored as strings, in this case under the key passphrase.life.api</i>
 
 > localData.forceget( 'api' )
 
@@ -694,7 +694,7 @@ None.
 <b> delete all prefixed keys in the domain (unprefixed localStorage keys are not affected)</b>
 > localStorage.setItem( 'API-key', 'test data' )
 
-<i>create a key in the same domain outside localData</i>
+<i>create a key in the same domain completely outside our instance of localDataStorage</i>
 
 > localData.clear()                                           
 
