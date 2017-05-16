@@ -18,19 +18,19 @@ Date: 15 MAY 2017
 ```
 
 ## Application:
-Primary usage is the ability to seamlessly set/get keys for native data type values (array, boolean,
+Primary usage is the ability to seamlessly *set/get* keys for native data type values (array, boolean,
 date, float, integer, object or string). While it's trivial to perform conversion, having it handled by the
 storage interface itself is exceptionally convenient. Javascript supports several data types, and
 extending them into localStorage seemed a logical step. Tracking them requires 2 bytes of memory
 overhead, per key value.
 
-Key values may be obfuscated using safeset/safeget. A master scramble key may be set globally, or
-individual scramble keys may be used per each safeset/safeget call. Scramble keys can be any value, and
-of any type (array, boolean, date, float, integer, etc.) Key values that have been safeset with an
+Key values may be obfuscated using *safeset/safeget*. A master scramble key may be set globally, or
+individual scramble keys may be used per each *safeset/safeget* call. Scramble keys can be any value, and
+of any type (array, boolean, date, float, integer, etc.) Key values that have been *safeset* with an
 individual scramble key can always be retrieved, but cannot be reconstructed apart from the same
 individual scramble key with which they were obfuscated. The global scramble key is stored in the
 interface as a convenience, but individual scramble keys are not. The global scramble key may be accessed
-using setscramblekey/getscramblekey methods. Scrambling is not encryption. For example, no attempt is
+using *setscramblekey/getscramblekey* methods. Scrambling is not encryption. For example, no attempt is
 made to conceal data lengths by artificially padding to a minimum amount. This would be counter-productive
 to minimizing memory usage.
 
@@ -40,10 +40,10 @@ compressed/decompressed. This works well for common English texts (short-length,
 much else.
 
 One may query by key name (to get the key's value), or query by value (to get any matching key names) using
-showkey, or query by existence using haskey. Stored values can be checked for duplicates. There are
-methods to prevent writing over an existing key (softset), and for deleting a key immediately upon
-retrieval (chopget). Memory usage can be analyzed against key values and key names, and key values can
-be checked for their data type. Lastly, bypass methods (forceset/forceget) permit accessing
+showkey, or query by existence using *haskey*. Stored values can be checked for duplicates. There are
+methods to prevent writing over an existing key *(softset)*, and for deleting a key immediately upon
+retrieval *(chopget)*. Memory usage can be analyzed against key values and key names, and key values can
+be checked for their data type. Lastly, bypass methods *(forceset/forceget)* permit accessing
 localStorage directly. 
 
 Since HTML5 localStorage is accessible to all processes running in the browser for the domain visited,
