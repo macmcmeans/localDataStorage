@@ -6,7 +6,16 @@ localDataStorage is an interface for the HTML5 localStorage API that endeavors t
 4) facilitate query by key (name) as well as query by (key) value, and 
 5) encourage segmented shared storage within the same domain by prefixing keys.
 
+version 1.0.0
+Author: William P. "Mac" McMeans
+Date: 15 MAY 2017
 
+# Script tag usage
+```
+<script src="splaylist.js"></script>
+```
+
+## Application:
 Primary usage is the ability to seamlessly set/get keys for native data type values (array, boolean,
 date, float, integer, object or string). While it's trivial to perform conversion, having it handled by the
 storage interface itself is exceptionally convenient. Javascript supports several data types, and
@@ -45,13 +54,11 @@ Multiple instances of localDataStorage can be run against the same domain at the
 multi-byte unicode-safe. 
 
 
-<br>&nbsp;<br>
-<b>DEPENDENCIES:</b>
+## Dependencies:
 None.
 
 
-<br>&nbsp;<br>
-<b>EXAMPLE USAGE:</b>
+## Example usage:
 
 <b> Create an instance of localDataStorage using the specified key name prefix</b>
 > localData = localDataStorage( 'passphrase.life' )
@@ -704,6 +711,19 @@ None.
 
 
 
-<br>&nbsp;<br>
-<b>TESTED:</b>
-1) Google Chrome on Win64
+## Tested:
+Google Chrome on Win64
+
+# License (BSD)
+Copyright (c) 2017, William P. "Mac" McMeans
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+
+3. Neither the name of localDataStorage nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
