@@ -40,7 +40,7 @@ compressed/decompressed. This works well for common English texts (short-length,
 much else.
 
 One may query by key name (to get the key's value), or query by value (to get any matching key names) using
-showkey, or query by existence using *haskey*. Stored values can be checked for duplicates. There are
+*showkey*, or query by existence using *haskey*. Stored values can be checked for duplicates. There are
 methods to prevent writing over an existing key *(softset)*, and for deleting a key immediately upon
 retrieval *(chopget)*. Memory usage can be analyzed against key values and key names, and key values can
 be checked for their data type. Lastly, bypass methods *(forceset/forceget)* permit accessing
