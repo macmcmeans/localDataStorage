@@ -6,6 +6,8 @@ localDataStorage is an interface for the HTML5 localStorage API that endeavors t
 4) facilitate query by key (name) as well as query by (key) value, and 
 5) encourage segmented shared storage within the same domain by prefixing keys.
 
+<br>&nbsp;<br>
+<br>&nbsp;<br>
 version 1.0.0<br>
 Author: William P. "Mac" McMeans<br>
 Date: 15 MAY 2017
