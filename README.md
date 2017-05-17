@@ -753,7 +753,7 @@ Google Chrome on Win 8.1 (x64)
 ## Version notes:
 * 1.0.0 - 15 MAY 2017, Initial realease
 
-* 1.1.0 - 17 MAY 2017, Added event listener
+* 1.1.0 - 17 MAY 2017, Added ability to listen to key value change events
 <br>&nbsp;<br>
 
 # License (BSD)
