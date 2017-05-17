@@ -60,6 +60,35 @@ multi-byte unicode-safe.
 None.
 
 
+## Events
+The native localStorage change event is annoying. The browsers don't implement it uniformly, and I can't
+listen for it on my single page. In case somebody (like me) wants to respond to key changes in the
+store, I've implemented the localDataStorage event that fires whenever a key value changes. The following
+snippet will get you up and running to listen for change events:
+
+```
+function newMessageHandler(e) {
+    console.log(
+        "event subscriber: " + e.currentTarget.nodeName + "\n" +
+        "timestamp: " + e.detail.timestamp + " (" + new Date( e.detail.timestamp ) + ")" + "\n" +
+        "prefix: " + e.detail.prefix + "\n" +
+        "message: " + e.detail.message + "\n" +
+        "method: " + e.detail.method + "\n" +
+        "key: " + e.detail.key + "\n" +
+        "old value: " + e.detail.oldval + "\n" +
+        "new value: " + e.detail.newval + "\n" +
+        "old data type: " + e.detail.oldtype + "\n" +
+        "new data type: " + e.detail.newtype
+    );
+};
+document.addEventListener(
+    "localDataStorage"
+    , newMessageHandler
+    , false
+);
+
+```
+
 ## Example usage:
 
 <b> Create an instance of localDataStorage using the specified key name prefix</b>
