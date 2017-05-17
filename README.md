@@ -61,10 +61,12 @@ None.
 
 
 ## Events
-The native localStorage change event is annoying. The browsers don't implement it uniformly, and I can't
-listen for it on my single page. In case somebody (like me) wants to respond to key changes in the
-store, I've implemented the localDataStorage event that fires whenever a key value changes. The following
-snippet will get you up and running to listen for change events:
+The native localStorage change event is... lacking. A single page isn't permitted to listen to storage events
+from any process, even if the page triggered them. In the event you'd like to listen to storage events caused
+by localDataStorage, use the snippet below. It responds to key value changes, such as those made by the set,
+safeset, chopget or remove methods. The event returns an activity timestamp and message, as well as the expected
+details of affected key name with its old and new values. The old and new key value data types are also
+reported.
 
 ```
 function newMessageHandler(e) {
