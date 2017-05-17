@@ -58,6 +58,7 @@ multi-byte unicode-safe.
 
 ## Dependencies:
 None.
+<br>&nbsp;<br>
 
 
 ## Events
@@ -91,6 +92,7 @@ document.addEventListener(
 
 ```
 
+<br>&nbsp;<br>
 ## Example usage:
 
 <b> Create an instance of localDataStorage using the specified key name prefix</b>
