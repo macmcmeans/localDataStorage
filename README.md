@@ -66,8 +66,8 @@ The native localStorage change event is... lacking. A single page isn't permitte
 from any process, even if it triggered them. In the event you'd like to listen to changes, localDataStorage
 will let you. localDataStorage fires an event on key value changes, such as those made by the set, safeset,
 chopget or remove methods. The event returns an activity timestamp and message, as well as expected details
-of affected key name with its old and new values. The old and new key value data types are also reported. This
-snippet nabs the details:
+of affected key name with its old and new values. The old and new key value data types are also reported. Code
+like the following snippet does the job:
 
 ```
 function newMessageHandler(e) {
