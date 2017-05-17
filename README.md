@@ -714,7 +714,7 @@ None.
 
 
 ## Tested:
-Google Chrome on Win64
+Google Chrome on Win 8.1 (x64)
 <br>&nbsp;<br>
 
 # License (BSD)
