@@ -717,6 +717,12 @@ None.
 Google Chrome on Win 8.1 (x64)
 <br>&nbsp;<br>
 
+## Version notes:
+* 1.0.0 - 15 MAY 2017, Initial realease
+
+* 1.1.0 - 17 MAY 2017, Added event listener
+<br>&nbsp;<br>
+
 # License (BSD)
 Copyright (c) 2017, William P. "Mac" McMeans<br>
 All rights reserved.
