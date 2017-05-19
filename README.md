@@ -14,7 +14,7 @@ Date: 17 MAY 2017
 
 # Script tag usage
 ```
-<script src="localDataStorage-1.0.min.js"></script>
+<script src="localDataStorage-1.1.0.min.js"></script>
 ```
 
 ## Application:
