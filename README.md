@@ -98,7 +98,7 @@ document.addEventListener(
 <b> Create an instance of localDataStorage using the specified key name prefix</b>
 > localData = localDataStorage( 'passphrase.life' )
 
--->  Instantiated. Prefix adds 16.00 bytes to every key name (stored using 32.00 bytes.   
+-->  Instantiated. Prefix adds 16.00 bytes to every key name (stored using 32.00 bytes).   
 
 
 <br>&nbsp;<br>
