@@ -1,9 +1,9 @@
 # localDataStorage
-localDataStorage is an interface for the HTML5 localStorage API that endeavors to--
-1) transparenty set/get javascript data types (Array, Boolean, Date, Float, Integer, String and Object),
-2) provide lightweight data obfuscation,
-3) automatically compress strings,
-4) facilitate query by key (name) as well as query by (key) value, and 
+localDataStorage is a javascript interface for the HTML5 localStorage API that endeavors to--
+1) transparently set/get data "types" such as Array, Boolean, Date, Float, Integer, Null, Object and String;
+2) provide lightweight data obfuscation;
+3) intelligently compress strings;
+4) facilitate query by key (name), query by (key) value and query by existence; and 
 5) encourage segmented shared storage within the same domain by prefixing keys.
 
 <br>&nbsp;<br>
@@ -18,11 +18,10 @@ Date: 17 MAY 2017
 ```
 
 ## Application:
-Primary usage is the ability to seamlessly *set/get* keys for native data type values (array, boolean,
-date, float, integer, object or string). While it's trivial to perform conversion, having it handled by the
-storage interface itself is exceptionally convenient. Javascript supports several data types, and
-extending them into localStorage seemed a logical step. Tracking them requires 2 bytes of memory
-overhead, per key value.
+Primary usage is the ability to seamlessly *set/get* keys for typically-used data types.
+While it's trivial to perform conversion, having it handled by the storage interface itself is
+exceptionally convenient. Javascript supports several primitives, and extending them into
+localStorage seemed a logical step. Tracking them requires 2 bytes of memory overhead, per key value.
 
 Key values may be obfuscated using *safeset/safeget*. A master scramble key may be set globally, or
 individual scramble keys may be used per each *safeset/safeget* call. Scramble keys can be any value, and
@@ -34,8 +33,8 @@ using *setscramblekey/getscramblekey* methods. Scrambling is not encryption. For
 made to conceal data lengths by artificially padding to a minimum amount. This would be counter-productive
 to minimizing memory usage.
 
-Data strings are intelligently compressed on-the-fly. This means strings are first analyzed to determine
-whether compression would lower the actual byte count in storage, and if so, they are silently
+Strings are intelligently compressed on-the-fly. This means they are first analyzed to determine
+whether compression would lower the actual byte count in storage, and if so, are silently
 compressed/decompressed. This works well for common English texts (short-length, 7-bit ASCII), and not
 much else.
 
@@ -53,7 +52,7 @@ Unlike the HTML5 API, there is no method in this interface to delete all keys in
 prefixed keys.
 
 Multiple instances of localDataStorage can be run against the same domain at the same time. It is
-multi-byte unicode-safe. 
+multi-byte Unicode-safe. 
 
 
 ## Dependencies:
@@ -70,23 +69,23 @@ of affected key name with its old and new values. The old and new key value data
 like the following snippet does the job:
 
 ```
-function newMessageHandler(e) {
+function nowICanSeeLocalStorageChangeEvents( e ) {
     console.log(
-        "event subscriber: " + e.currentTarget.nodeName + "\n" +
-        "timestamp: " + e.detail.timestamp + " (" + new Date( e.detail.timestamp ) + ")" + "\n" +
-        "prefix: " + e.detail.prefix + "\n" +
-        "message: " + e.detail.message + "\n" +
-        "method: " + e.detail.method + "\n" +
-        "key: " + e.detail.key + "\n" +
-        "old value: " + e.detail.oldval + "\n" +
-        "new value: " + e.detail.newval + "\n" +
+        "subscriber: "    + e.currentTarget.nodeName + "\n" +
+        "timestamp: "     + e.detail.timestamp + " (" + new Date( e.detail.timestamp ) + ")" + "\n" +
+        "prefix: "        + e.detail.prefix  + "\n" +
+        "message: "       + e.detail.message + "\n" +
+        "method: "        + e.detail.method  + "\n" +
+        "key: "           + e.detail.key     + "\n" +
+        "old value: "     + e.detail.oldval  + "\n" +
+        "new value: "     + e.detail.newval  + "\n" +
         "old data type: " + e.detail.oldtype + "\n" +
         "new data type: " + e.detail.newtype
     );
 };
 document.addEventListener(
     "localDataStorage"
-    , newMessageHandler
+    , nowICanSeeLocalStorageChangeEvents
     , false
 );
 
