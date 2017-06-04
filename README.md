@@ -90,8 +90,15 @@ document.addEventListener(
 );
 
 ```
-
 <br>&nbsp;<br>
+
+
+## Wiki:
+An incomplete <a href="https://github.com/macmcmeans/localDataStorage.js/wiki">wiki is here</a>.
+<br>&nbsp;<br>
+
+
+
 ## Example usage:
 
 <b> Create an instance of localDataStorage using the specified key name prefix</b>
