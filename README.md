@@ -7,14 +7,14 @@ localDataStorage is a javascript interface for the HTML5 localStorage API that e
 5) encourage segmented shared storage within the same domain by prefixing keys.
 
 <br>&nbsp;<br>
-Version 1.1.0<br>
+Version 1.2.0<br>
 Author: William P. "Mac" McMeans<br>
 Date: 17 MAY 2017
 <br>&nbsp;<br>
 
 # Script tag usage
 ```
-<script src="localDataStorage-1.1.0.min.js"></script>
+<script src="localDataStorage-1.2.0.min.js"></script>
 ```
 
 ## Application:
@@ -760,6 +760,8 @@ Google Chrome on Win 8.1 (x64)
 * 1.0.0 - 15 MAY 2017, Initial realease
 
 * 1.1.0 - 17 MAY 2017, Added ability to listen to key value change events
+
+* 1.2.0 - 19 JUN 2017, Checks if localStorage is available and, if not, gracefully fails when called
 <br>&nbsp;<br>
 
 # License (BSD)
