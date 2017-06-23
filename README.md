@@ -757,11 +757,19 @@ Google Chrome on Win 8.1 (x64)
 <br>&nbsp;<br>
 
 ## Version notes:
-* 1.0.0 - 15 MAY 2017, Initial realease
+* 1.2.0 - 19 JUN 2017
 
-* 1.1.0 - 17 MAY 2017, Added ability to listen to key value change events
+NEW: Check if localStorage is available and, if not, gracefully fails when called
 
-* 1.2.0 - 19 JUN 2017, Checks if localStorage is available and, if not, gracefully fails when called
+
+* 1.1.0 - 17 MAY 2017
+
+NEW: Add ability to listen to key value change events
+
+
+* 1.0.0 - 15 MAY 2017
+
+Initial realease
 <br>&nbsp;<br>
 
 # License (BSD)
