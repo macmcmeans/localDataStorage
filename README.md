@@ -770,7 +770,7 @@ NEW: Add ability to listen to key value change events (in same window/tab)
 
 * 1.0.0 - 15 MAY 2017
 
-Initial realease
+Initial release
 <br>&nbsp;<br>
 
 # License (BSD)
