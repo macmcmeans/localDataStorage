@@ -765,7 +765,7 @@ NEW: Check if localStorage is available and, if not, gracefully fails when calle
 
 * 1.1.0 - 17 MAY 2017
 
-NEW: Add ability to listen to key value change events
+NEW: Add ability to listen to key value change events (in same window/tab)
 
 
 * 1.0.0 - 15 MAY 2017
