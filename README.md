@@ -1,10 +1,10 @@
 # localDataStorage
-localDataStorage is a javascript interface for the HTML5 localStorage API that endeavors to--
-1) transparently set/get key values using data "types" such as Array, Boolean, Date, Float, Integer, Null, Object and String;
-2) provide lightweight data obfuscation;
-3) intelligently compress strings;
-4) facilitate query by key (name), query by (key) value and query by existence; and 
-5) encourage segmented shared storage within the same domain by prefixing keys.
+localDataStorage is a javascript interface for the HTML5 localStorage API that--
+1) transparently sets/gets key values using data "types" such as Array, Boolean, Date, Float, Integer, Null, Object and String;
+2) provides lightweight data obfuscation;
+3) intelligently compresses strings;
+4) facilitates query by key (name), query by (key) value and query by existence; and 
+5) enforces segmented shared storage within the same domain by prefixing keys.
 
 <br>&nbsp;<br>
 Version 1.2.0<br>
