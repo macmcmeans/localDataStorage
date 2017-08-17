@@ -774,7 +774,7 @@ Initial release
 <br>&nbsp;<br>
 
 # License (BSD)
-Copyright (c) 2017, William P. "Mac" McMeans<br>
+Copyright (c) 2017, William McMeans<br>
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
