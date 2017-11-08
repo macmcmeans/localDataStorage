@@ -760,17 +760,17 @@ Google Chrome on Win 8.1 (x64)
 ## Version notes:
 * 1.2.0 - 19 JUN 2017
 
-NEW: Check if localStorage is available and, if not, gracefully fails when called
+NEW: Check if localStorage is available and, if not, gracefully fails when called. This means that all methods will simply return <i>false</i> instead of nasty type errors.
 
 
 * 1.1.0 - 17 MAY 2017
 
-NEW: Add ability to listen to key value change events (in same window/tab)
+NEW: Add ability to listen to key value change events (in same window/tab).
 
 
 * 1.0.0 - 15 MAY 2017
 
-Initial release
+Initial release.
 <br>&nbsp;<br>
 
 # License (BSD)
