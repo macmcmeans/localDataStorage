@@ -424,15 +424,15 @@ An incomplete <a href="https://github.com/macmcmeans/localDataStorage.js/wiki">w
 
 <br>&nbsp;<br>
 <b> boolean check the data type of a key's value</b>
-> localData.isArray( 'key5' )                                 
+> localData.isarray( 'key5' )                                 
 
 -->  true
 
-> localData.isFloat( 'testkey' )                              
+> localData.isfloat( 'testkey' )                              
 
 -->  true
 
-> localData.isNumber( 'testkey' )                             
+> localData.isnumber( 'testkey' )                             
 
 -->  true
 
