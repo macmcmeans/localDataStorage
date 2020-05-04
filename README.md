@@ -14,7 +14,7 @@ Date: 4 MAY 2020
 
 # Script tag usage
 ```
-<script src="localDataStorage-1.2.0.min.js"></script>
+<script src="localDataStorage-1.3.0.min.js"></script>
 ```
 
 ## Application:
