@@ -7,9 +7,9 @@ localDataStorage is a javascript interface for the HTML5 localStorage API that--
 5) enforces segmented shared storage within the same domain by prefixing keys.
 
 <br>&nbsp;<br>
-Version 1.2.0<br>
+Version 1.3.0<br>
 Author: William McMeans<br>
-Date: 19 JUN 2017
+Date: 4 MAY 2020
 <br>&nbsp;<br>
 
 # Script tag usage
@@ -758,9 +758,14 @@ Google Chrome on Win 8.1 (x64)
 <br>&nbsp;<br>
 
 ## Version notes:
+* 1.3.0 - 4 MAY 2020
+
+NEW: Implemented ALEA RNG. Code cleanup.
+<br>&nbsp;<br>
+
 * 1.2.0 - 19 JUN 2017
 
-NEW: Check if localStorage is available and, if not, gracefully fails when called. This means that all methods will simply return <i>false</i> instead of nasty type errors.
+Check if localStorage is available and, if not, gracefully fails when called. This means that all methods will simply return <i>false</i> instead of nasty type errors.
 <br>&nbsp;<br>
 
 * 1.1.0 - 17 MAY 2017
