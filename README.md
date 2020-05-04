@@ -8,7 +8,7 @@ localDataStorage is a javascript interface for the HTML5 localStorage API that--
 
 <br>&nbsp;<br>
 Version 1.3.0<br>
-Author: William McMeans<br>
+Author: W. "Mac" McMeans<br>
 Date: 4 MAY 2020
 <br>&nbsp;<br>
 
@@ -779,7 +779,7 @@ Initial release.
 <br>&nbsp;<br>
 
 # License (BSD)
-Copyright (c) 2017, William McMeans<br>
+Copyright (c) 2017-2020, W. "Mac" McMeans<br>
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
