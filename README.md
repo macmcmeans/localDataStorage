@@ -760,7 +760,7 @@ Google Chrome on Win 8.1 (x64)
 ## Version notes:
 * 1.3.0 - 4 MAY 2020
 
-NEW: Implemented ALEA RNG. Fixed an issue where scrambled key data would randomly become corrupted. Code cleanup.
+NEW: Implemented [ALEA RNG](https://github.com/macmcmeans/aleaPRNG). Fixed an issue where scrambled key data would randomly become corrupted. Code cleanup.
 <br>&nbsp;<br>
 
 * 1.2.0 - 19 JUN 2017
