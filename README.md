@@ -1,10 +1,11 @@
 # localDataStorage
-localDataStorage is a javascript interface for the HTML5 localStorage API that--
+This is a synchronous javascript interface for the HTML5 localStorage API that--
 1) transparently sets/gets key values using data "types" such as Array, Boolean, Date, Float, Integer, Null, Object and String;
 2) provides lightweight data obfuscation;
-3) intelligently compresses strings;
-4) facilitates query by key (name), query by (key) value and query by existence; and 
-5) enforces segmented shared storage within the same domain by prefixing keys.
+3) intelligently compresses strings automatically;
+4) facilitates query by key (name), query by (key) value and query by existence; 
+5) enforces segmented shared storage within the same domain by prefixing keys; and
+6) allows you to monitor localStorage change events on the same page/tab.
 
 <br>&nbsp;<br>
 Version 1.3.0<br>
@@ -29,9 +30,10 @@ of any type (array, boolean, date, float, integer, etc.) Key values that have be
 individual scramble key can always be retrieved, but cannot be reconstructed apart from the same
 individual scramble key with which they were obfuscated. The global scramble key is stored in the
 interface as a convenience, but individual scramble keys are not. The global scramble key may be accessed
-using *setscramblekey/getscramblekey* methods. Scrambling is not encryption. For example, no attempt is
-made to conceal data lengths by artificially padding to a minimum amount. This would be counter-productive
-to minimizing memory usage.
+using *setscramblekey/getscramblekey* methods.
+
+Scrambling is not encryption. For example, no attempt is made to conceal data lengths by artificially padding
+to a minimum length. This would be counter-productive to minimizing memory usage.
 
 Strings are intelligently compressed on-the-fly. This means they are first analyzed to determine
 whether compression would lower the actual byte count in storage, and if so, are silently
