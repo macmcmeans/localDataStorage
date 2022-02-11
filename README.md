@@ -756,7 +756,7 @@ An incomplete <a href="https://github.com/macmcmeans/localDataStorage.js/wiki">w
 
 
 ## Tested:
-Google Chrome on Win 8.1 (x64)
+Chrome(ium) and Gecko browsers on Win 10 (x64)
 <br>&nbsp;<br>
 
 ## Version notes:
