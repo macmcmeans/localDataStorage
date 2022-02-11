@@ -762,7 +762,7 @@ Google Chrome on Win 8.1 (x64)
 ## Version notes:
 * 1.3.0 - 4 MAY 2020
 
-NEW: Implemented the [Alea RNG](https://github.com/macmcmeans/aleaPRNG). Fixed an issue where scrambled key data would randomly become corrupted. Code cleanup.
+Implement optional flag useful on instantiation to mute console messages warning of the existence of previous keys and the space required for prefix storage.
 <br>&nbsp;<br>
 
 * 1.2.0 - 19 JUN 2017
@@ -772,7 +772,7 @@ Check if localStorage is available and, if not, gracefully fails when called. Th
 
 * 1.1.0 - 17 MAY 2017
 
-NEW: Add ability to listen to key value change events (in same window/tab).
+Add ability to listen to key value change events (in same window/tab).
 <br>&nbsp;<br>
 
 * 1.0.0 - 15 MAY 2017
