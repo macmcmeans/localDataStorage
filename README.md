@@ -3,7 +3,7 @@ This is a synchronous javascript interface for the HTML5 localStorage API that--
 1) transparently sets/gets key values using data "types" such as Array, Boolean, Date, Float, Integer, Null, Object and String;
 2) provides lightweight data obfuscation;
 3) intelligently compresses strings automatically;
-4) facilitates query by key (name), query by (key) value and query by existence; 
+4) facilitates query by key (name), query by (key) value and query by existence (boolean check); 
 5) enforces segmented shared storage within the same domain by prefixing keys; and
 6) allows you to monitor localStorage change events on the same page/tab.
 
