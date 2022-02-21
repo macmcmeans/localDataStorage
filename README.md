@@ -760,24 +760,26 @@ Chrome(ium) browsers (blink engine) and FireFox (gecko); on Win 10 (x64).
 <br>&nbsp;<br>
 
 ## Version notes:
-* 1.3.0 - 4 MAY 2020
-
-Implement optional flag useful on instantiation to mute console messages warning of the existence of previous keys and the space required for prefix storage.
+* 1.3.1 - 21 FEB 2022<br>
+``patch`` Fixed a bug where the Clear() method did not fire an event upon deletion of keys.<br>
+``patch`` Corrected logic in the Rename() method.<br>
+``update`` Revised the wiki.
 <br>&nbsp;<br>
 
-* 1.2.0 - 19 JUN 2017
-
-Check if localStorage is available and, if not, gracefully fails when called. This means that all methods will simply return <i>false</i> instead of nasty type errors.
+* 1.3.0 - 4 MAY 2020<br>
+``feature`` Implement optional flag useful on instantiation to mute console messages warning of the existence of previous keys and the space required for prefix storage.
 <br>&nbsp;<br>
 
-* 1.1.0 - 17 MAY 2017
-
-Add ability to listen to key value change events (in same window/tab).
+* 1.2.0 - 19 JUN 2017<br>
+``update`` Checks whether localStorage is available and if not, gracefully fails when called. This means that all methods will simply return <i>false</i> instead of nasty type errors.
 <br>&nbsp;<br>
 
-* 1.0.0 - 15 MAY 2017
+* 1.1.0 - 17 MAY 2017<br>
+``feature`` Add ability to listen to key value change events (in same window/tab).
+<br>&nbsp;<br>
 
-Initial release.
+* 1.0.0 - 15 MAY 2017<br>
+``release`` Initial release.
 <br>&nbsp;<br>
 
 # License (BSD)
