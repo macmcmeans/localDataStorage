@@ -28,8 +28,8 @@ Key values may be obfuscated using *safeset/safeget*. A master scramble key may 
 individual scramble keys may be used per each *safeset/safeget* call. Scramble keys can be any value, and
 of any type (array, boolean, date, float, integer, etc.) Key values that have been *safeset* with an
 individual scramble key can always be retrieved, but cannot be reconstructed apart from the same
-individual scramble key with which they were obfuscated. The global scramble key is stored in the
-interface as a convenience, but individual scramble keys are not. The global scramble key may be accessed
+individual scramble key with which they were obfuscated. As a convenience, the global scramble key is stored in the
+interface, but individual scramble keys are not. The global scramble key may be accessed
 using *setscramblekey/getscramblekey* methods.
 
 Scrambling is not encryption. For example, no attempt is made to conceal data lengths by artificially padding
