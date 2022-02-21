@@ -10,7 +10,7 @@ This is a synchronous javascript interface for the HTML5 localStorage API that--
 <br>&nbsp;<br>
 Version 1.3.1<br>
 Author: W. "Mac" McMeans<br>
-Date: 22 FEB 2022
+Date: 21 FEB 2022
 <br>&nbsp;<br>
 
 # Script tag usage
