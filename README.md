@@ -8,9 +8,9 @@ This is a synchronous javascript interface for the HTML5 localStorage API that--
 6) responds to localStorage change events on the same page/tab.
 
 <br>&nbsp;<br>
-Version 1.3.0<br>
+Version 1.3.1<br>
 Author: W. "Mac" McMeans<br>
-Date: 4 MAY 2020
+Date: 22 FEB 2022
 <br>&nbsp;<br>
 
 # Script tag usage
