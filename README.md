@@ -15,7 +15,7 @@ Date: 22 FEB 2022
 
 # Script tag usage
 ```
-<script src="localDataStorage-1.3.0.min.js"></script>
+<script src="localDataStorage-1.3.1.min.js"></script>
 ```
 
 ## Application:
