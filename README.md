@@ -79,13 +79,15 @@ function nowICanSeeLocalStorageChangeEvents( e ) {
         "prefix: "        + e.detail.prefix  + "\n" +
         "message: "       + e.detail.message + "\n" +
         "method: "        + e.detail.method  + "\n" +
-        "key: "           + e.detail.key     + "\n" +
+        "old key: "       + e.detail.oldkey  + "\n" +
+        "new key: "       + e.detail.newkey  + "\n" +
         "old value: "     + e.detail.oldval  + "\n" +
         "new value: "     + e.detail.newval  + "\n" +
         "old data type: " + e.detail.oldtype + "\n" +
         "new data type: " + e.detail.newtype
     );
 };
+
 document.addEventListener(
     "localDataStorage"
     , nowICanSeeLocalStorageChangeEvents
