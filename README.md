@@ -55,8 +55,7 @@ prefixed keys.
 
 The domain of operation for HTML5 localStorage is specific to the protocol, host & port; and multiple
 instances of localDataStorage can be run against the same domain at the same time. It is emoji-friendly
-😀😆😊😵, which is to say that key values and key names are multi-byte Unicode-safe. 
-
+🤪🤷‍♂️💖👍, which is to say that key values and key names are multi-byte Unicode-safe. 
 
 ## Dependencies:
 None.
