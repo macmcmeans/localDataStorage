@@ -65,7 +65,7 @@ None.
 
 ## Events
 The native localStorage change event is... lacking. Per the whims of your browser, a single page isn't permitted
-to listen to change events from any process, even if it triggered them. Now, in the event you'd like to listen out
+to listen to change events triggered from it. Now, in the event you'd like to listen out
 for changes, localDataStorage will let you. localDataStorage fires an event on key value changes, such as those made
 by the set, safeset, chopget or remove methods. The event returns an activity timestamp and message, as well as expected
 details about the affected key name with its old and new values. The old and new key value data types are also reported.
