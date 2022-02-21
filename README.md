@@ -765,6 +765,7 @@ Chrome(ium) browsers (blink engine) and FireFox (gecko); on Win 10 (x64).
 * 1.3.1 - 21 FEB 2022<br>
 ``patch`` Fixed a bug where the Clear() method did not fire an event upon deletion of keys.<br>
 ``patch`` Corrected logic in the Rename() method.<br>
+``patch`` Updated the internal custom event to display old key name and new key name.<br>
 ``update`` Revised the wiki.
 <br>&nbsp;<br>
 
