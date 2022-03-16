@@ -14,9 +14,11 @@ Date: 21 FEB 2022
 <br>&nbsp;<br>
 
 # Script tag usage
+Use this CDN
 ```
 <script src="https://cdn.jsdelivr.net/gh/macmcmeans/localDataStorage@1.3.1/localDataStorage-1.3.1.min.js"></script>
 ```
+or host it locally.
 
 ## Application:
 Primary usage is the ability to seamlessly *set/get* keys for typically-used data types.
