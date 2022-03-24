@@ -51,17 +51,17 @@ The native localStorage change event is... lacking. Per the whims of your browse
 ```
 function nowICanSeeLocalStorageChangeEvents( e ) {
     console.log(
-        "subscriber: "    + e.currentTarget.nodeName + "\n" +
-        "timestamp: "     + e.detail.timestamp + " (" + new Date( e.detail.timestamp ) + ")" + "\n" +
-        "prefix: "        + e.detail.prefix  + "\n" +
-        "message: "       + e.detail.message + "\n" +
-        "method: "        + e.detail.method  + "\n" +
-        "old key: "       + e.detail.oldkey  + "\n" +
-        "new key: "       + e.detail.newkey  + "\n" +
-        "old value: "     + e.detail.oldval  + "\n" +
-        "new value: "     + e.detail.newval  + "\n" +
-        "old data type: " + e.detail.oldtype + "\n" +
-        "new data type: " + e.detail.newtype
+        "subscriber: " + e.currentTarget.nodeName + "\n" +
+        "timestamp: "  + e.detail.timestamp + " (" + new Date( e.detail.timestamp ) + ")" + "\n" +
+        "prefix: "     + e.detail.prefix  + "\n" +
+        "message: "    + e.detail.message + "\n" +
+        "method: "     + e.detail.method  + "\n" +
+        "old key: "    + e.detail.oldkey  + "\n" +
+        "new key: "    + e.detail.newkey  + "\n" +
+        "old value: "  + e.detail.oldval  + "\n" +
+        "new value: "  + e.detail.newval  + "\n" +
+        "old type: "   + e.detail.oldtype + "\n" +
+        "new type: "   + e.detail.newtype
     );
 };
 
