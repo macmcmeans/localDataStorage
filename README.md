@@ -16,17 +16,22 @@ Date: 21 FEB 2022
 ## Script tag usage
 ```
 <script src="https://cdn.jsdelivr.net/gh/macmcmeans/localDataStorage@1.3.1/localDataStorage-1.3.1.min.js"></script>
+<script
+    src="https://cdn.jsdelivr.net/gh/macmcmeans/localDataStorage@1.3.1/localDataStorage-1.3.1.min.js"
+    integrity="sha384-J9uUJRDSnAv6LCRSqLjjlkA59ivrX9mgJ2Y4btuLuVl7ZI3bFqpsdqmn76qQc7hi"
+    crossorigin="anonymous"
+></script>
 ```
 
 ## Application:
 Primary usage is the ability to seamlessly *set/get* keys for typically-used data types without having to perform conversion in your own logic. Toss out an integer and have it returned. Hand the interface an array and get it back. While it's trivial to perform conversion, having it handled by the storage interface itself is
 exceptionally convenient. Javascript supports several primitives, and extending them into localStorage seemed a logical step. Tracking them requires 2 bytes of memory overhead, per key value.
 
-Key values may be obfuscated using *safeset/safeget*. A master scramble key may be set globally, or individual scramble keys may be used per each *safeset/safeget* call. Scramble keys can be any value, and of any type (array, boolean, date, float, integer, etc.) Key values that have been *safeset* with an individual scramble key can always be retrieved, but cannot be reconstructed apart from the same individual scramble key with which they were obfuscated. As a convenience, the global scramble key is stored in the interface, but individual scramble keys are not. The global scramble key may be accessed using *setscramblekey/getscramblekey* methods.
+Key values may be obfuscated using *safeset/safeget*. A master scramble key may be set globally, or individual scramble keys may be used per each *safeset/safeget* call. Scramble keys can be any value, and of any type (array, boolean, date, float, integer, etc.) Key values that have been *safeset* with an individual scramble key can always be retrieved, but cannot be reconstructed apart from the same individual scramble key with which they were obfuscated. For convenience, the global scramble key is stored in the interface. For security, individual scramble keys are not. The global scramble key may be accessed using *setscramblekey/getscramblekey* methods.
 
 Scrambling is not encryption. For example, no attempt is made to conceal data lengths by artificially padding to a minimum length. This would be counter-productive to minimizing memory usage.
 
-Strings are intelligently compressed on-the-fly. This means they are first analyzed to determine whether compression would lower the actual byte count in storage, and if so, are silently compressed/decompressed. This works well for common English texts (short-length, 7-bit ASCII), and not much else.
+Strings are intelligently compressed on-the-fly. This means they are first analyzed to determine whether compression would lower the actual byte count in storage, and if so, are silently compressed for you. This works well for common English texts (short-length, 7-bit ASCII), and not much else.
 
 One may query by key name (to get the key's value), or query by value (to get any matching key names) using *showkey*, or query by existence using *haskey*. Stored values can be checked for duplicates. There are methods to prevent writing over an existing key *(softset)*, and for deleting a key immediately upon retrieval *(chopget)*. Memory usage can be analyzed against key values and key names, and key values can be checked for their data type. Lastly, bypass methods *(forceset/forceget)* permit accessing localStorage directly. 
 
