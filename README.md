@@ -17,7 +17,7 @@ Date: 21 FEB 2022
 ```
 <script
     src="https://cdn.jsdelivr.net/gh/macmcmeans/localDataStorage@1.3.1/localDataStorage-1.3.1.min.js"
-    integrity="sha384-J9uUJRDSnAv6LCRSqLjjlkA59ivrX9mgJ2Y4btuLuVl7ZI3bFqpsdqmn76qQc7hi"
+    integrity="sha384-Rc8gyCOHcneAsNwEsjnQQLQ6JSS0ZBgZxwr2Qh7z4Knfd5O5GLnD5sm6WSCYKv+2"
     crossorigin="anonymous"
 ></script>
 ```
