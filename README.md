@@ -21,7 +21,7 @@ Date: 21 FEB 2022
     crossorigin="anonymous"
 ></script>
 ```
-Since the destination CDN is a repository over which we have no control, best practice demands using [Subresource Integrity](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) to prevent file tampering. 
+Since the source CDN is a repository over which we have no control, best practice demands using [Subresource Integrity](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) to prevent file tampering. 
 <br>&nbsp;<br>
 
 ## Application:
