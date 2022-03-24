@@ -15,13 +15,14 @@ Date: 21 FEB 2022
 
 ## Script tag usage
 ```
-<script src="https://cdn.jsdelivr.net/gh/macmcmeans/localDataStorage@1.3.1/localDataStorage-1.3.1.min.js"></script>
 <script
     src="https://cdn.jsdelivr.net/gh/macmcmeans/localDataStorage@1.3.1/localDataStorage-1.3.1.min.js"
     integrity="sha384-J9uUJRDSnAv6LCRSqLjjlkA59ivrX9mgJ2Y4btuLuVl7ZI3bFqpsdqmn76qQc7hi"
     crossorigin="anonymous"
 ></script>
 ```
+Since the destination CDN is a repository over which we have no control, best practice demands using [Subresource Integrity](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) to prevent file tampering. 
+<br>&nbsp;<br>
 
 ## Application:
 Primary usage is the ability to seamlessly *set/get* keys for typically-used data types without having to perform conversion in your own logic. Toss out an integer and have it returned. Hand the interface an array and get it back. While it's trivial to perform conversion, having it handled by the storage interface itself is
