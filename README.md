@@ -25,8 +25,7 @@ Since the source CDN is a repository over which we have no control, best practic
 <br>&nbsp;<br>
 
 ## Application:
-Primary usage is the ability to seamlessly *set/get* keys for typically-used data types without having to perform conversion in your own logic. Toss out an integer and have it returned. Hand the interface an array and get it back. While it's trivial to perform conversion, having it handled by the storage interface itself is
-exceptionally convenient. Javascript supports several primitives, and extending them into localStorage seemed a logical step. Tracking them requires 2 bytes of memory overhead, per key value.
+Primary usage is the ability to seamlessly *set/get* keys for typically-used data types without having to perform conversion in your own logic. Toss out an integer and have it returned. Hand the interface an array and get it back. Need to store dates, booleans or objects? No problem. While it's not rocket science to convert your stored data, having it handled by the interface itself is exceptionally convenient. Javascript supports several primitives, and extending them into localStorage seemed a logical step. Tracking them requires 2 bytes of memory overhead, per key value.
 
 Key values may be obfuscated using *safeset/safeget*. A master scramble key may be set globally, or individual scramble keys may be used per each *safeset/safeget* call. Scramble keys can be any value, and of any type (array, boolean, date, float, integer, etc.) Key values that have been *safeset* with an individual scramble key can always be retrieved, but cannot be reconstructed apart from the same individual scramble key with which they were obfuscated. For convenience, the global scramble key is stored in the interface. For security, individual scramble keys are not. The global scramble key may be accessed using *setscramblekey/getscramblekey* methods.
 
