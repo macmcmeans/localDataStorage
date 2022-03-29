@@ -37,7 +37,7 @@ One may query by key name (to get the key's value), or query by value (to get an
 
 Since HTML5 localStorage is accessible to all processes running in the browser for the domain visited, it is advisable to have an interface that segments access, as much as possible. To that end, the use of prefixed keys is strongly encouraged, and localDataStorage will only read/write/delete its own keys. Unlike the HTML5 API, there is no method in this interface to delete all keys in the domain, only all prefixed keys.
 
-The domain of operation for HTML5 localStorage is specific to the protocol, host & port; and multiple instances of localDataStorage can be run against the same domain at the same time. It is emoji-friendly 🤪🤷‍♂️💖👍, which is to say that key values and key names are multi-byte Unicode-safe. 
+The domain of operation for HTML5 localStorage is specific to the protocol, host & port; and multiple instances of localDataStorage can be run against the same domain at the same time. It is emoji-friendly 🤪🤷‍♂️💖👍, which is to say that key names and values are multi-byte Unicode-safe. 
 
 ## Dependencies:
 None.
