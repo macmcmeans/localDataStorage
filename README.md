@@ -1,4 +1,4 @@
-# localDataStorage [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity) [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+# 💼 localDataStorage [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity) [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 This is a synchronous javascript interface for the HTML5 localStorage API that--
 1) __transparently sets/gets__ key values using data "types" such as Array, Boolean, Date, Float, Integer, Null, Object and String;
 2) __provides__ lightweight __data obfuscation__;
