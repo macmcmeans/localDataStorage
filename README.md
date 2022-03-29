@@ -29,15 +29,15 @@ Primary usage is the ability to seamlessly *set/get* keys for typical data types
 
 Key values may be obfuscated using *safeset/safeget*. A master scramble key may be set globally, or individual scramble keys may be used per each *safeset/safeget* call. Scramble keys can be any value, and of any type (array, boolean, date, float, integer, etc.) Key values that have been *safeset* with an individual scramble key can always be retrieved, but cannot be reconstructed apart from the same individual scramble key with which they were obfuscated. For convenience, the global scramble key is stored in the interface. For security, individual scramble keys are not. The global scramble key may be accessed using *setscramblekey/getscramblekey* methods.
 
-Scrambling is not encryption. For example, no attempt is made to conceal data lengths by artificially padding to a minimum length. This would be counter-productive to minimizing memory usage.
+Scrambling is not encryption. For example, no attempt is made to conceal data lengths by artificially padding to a minimum length. This would be counterproductive to minimizing memory usage.
 
-Strings are intelligently compressed on-the-fly. This means they are first analyzed to determine whether compression would lower the actual byte count in storage, and if so, are silently compressed for you. This works well for common English texts (short-length, 7-bit ASCII), and not much else.
+Strings are intelligently compressed on‑the‑fly. This means they are first analyzed to determine whether compression would lower the actual byte count in storage, and if so, are silently compressed for you. This works well for common English texts (short‑length, 7‑bit ASCII), and not much else.
 
 One may query by key name (to get the key's value), or query by value (to get any matching key names) using *showkey*, or query by existence using *haskey*. Stored values can be checked for duplicates. There are methods to prevent writing over an existing key *(softset)*, and for deleting a key immediately upon retrieval *(chopget)*. Memory usage can be analyzed against key values and key names, and key values can be checked for their data type. Lastly, bypass methods *(forceset/forceget)* permit accessing localStorage directly. 
 
 Since HTML5 localStorage is accessible to all processes running in the browser for the domain visited, it is advisable to have an interface that segments access, as much as possible. To that end, the use of prefixed keys is strongly encouraged, and localDataStorage will only read/write/delete its own keys. Unlike the HTML5 API, there is no method in this interface to delete all keys in the domain, only all prefixed keys.
 
-The domain of operation for HTML5 localStorage is specific to the protocol, host & port; and multiple instances of localDataStorage can be run against the same domain at the same time. It is emoji-friendly 🤪🤷‍♂️💖👍, which is to say that key names and values are multi-byte Unicode-safe. 
+The domain of operation for HTML5 localStorage is specific to the protocol, host & port; and multiple instances of localDataStorage can be run against the same domain at the same time. It is emoji‑friendly 🤪🤷‍♂️💖👍, which is to say that key names and values are multibyte Unicode‑safe. 
 
 ## Dependencies:
 None.
