@@ -1,11 +1,11 @@
 # localDataStorage [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity) [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 This is a synchronous javascript interface for the HTML5 localStorage API that--
 1) __transparently sets/gets__ key values using data "types" such as Array, Boolean, Date, Float, Integer, Null, Object and String;
-2) provides lightweight __data obfuscation__;
+2) __provides__ lightweight __data obfuscation__;
 3) intelligently and automatically __compresses strings__ (to save storage space);
-4) facilitates __robust lookup__ including query by key (name), query by (key) value and query by existence (boolean check); 
-5) enforces segmented __shared storage__ within the same domain by prefixing keys; and
-6) responds to localStorage __change events__ on the same page/tab that fired them.
+4) __facilitates robust lookup__ including query by key (name), query by (key) value and query by existence (boolean check); 
+5) __enforces segmented shared storage__ within the same domain by prefixing keys; and
+6) __responds to localStorage change events__ on the same page/tab that fired them.
 
 <br>&nbsp;<br>
 Version 1.3.1<br>
