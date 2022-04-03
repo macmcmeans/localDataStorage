@@ -75,7 +75,7 @@ document.addEventListener(
 
 
 ## Wiki:
-An incomplete <a href="https://github.com/macmcmeans/localDataStorage.js/wiki">wiki is here</a>.
+Here's a <a href="https://github.com/macmcmeans/localDataStorage.js/wiki">wiki</a> in-progress.
 <br>&nbsp;<br>
 
 
