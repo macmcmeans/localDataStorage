@@ -40,7 +40,9 @@ Since HTML5 localStorage is accessible to all processes running in the browser f
 The domain of operation for HTML5 localStorage is specific to the protocol, host & port; and multiple instances of localDataStorage can be run against the same domain at the same time. It is emoji‑friendly 🤪🤷‍♂️💖👍, which is to say that key names and their values, as well as scramble keys, are multibyte Unicode‑safe. 
 
 ## Dependencies:
-None.
+There are external dependencies.
+
+Internally, string compression is accomplished with [smaz.js](#refs). Obfuscation is supported by [aleaPRNG](#refs) and [fisherYatesDurstenfeldKnuthShuffle](#refs).
 <br>&nbsp;<br>
 
 
@@ -731,7 +733,13 @@ Here's a <a href="https://github.com/macmcmeans/localDataStorage.js/wiki">wiki</
 <br><i>all localData keys have been removed</i>
 
 
+## REFS:
+https://github.com/personalcomputer/smaz.js
 
+https://github.com/macmcmeans/aleaPRNG
+
+https://github.com/macmcmeans/fisherYatesDurstenfeldKnuthShuffle
+<br>&nbsp;<br>
 
 ## Tested:
 Chrome(ium) browsers (blink engine) and FireFox (gecko); on Win 10 (x64).
