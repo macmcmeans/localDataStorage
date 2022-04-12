@@ -42,7 +42,7 @@ The domain of operation for HTML5 localStorage is specific to the protocol, host
 ## Dependencies:
 There are external dependencies.
 
-Internally, string compression is accomplished with [smaz.js](#refs). Obfuscation is supported by [aleaPRNG](#refs) and [fisherYatesDurstenfeldKnuthShuffle](#refs).
+Internally, string compression is accomplished with [smaz.js](#refs), while obfuscation is supported by [aleaPRNG](#refs) and [fisherYatesDurstenfeldKnuthShuffle](#refs).
 <br>&nbsp;<br>
 
 
