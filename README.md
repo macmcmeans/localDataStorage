@@ -28,7 +28,7 @@ Since the source CDN is a repository over which we have no control, best practic
 Primary usage is the ability to seamlessly *set/get* keys for typical data types without having to perform conversion in your own logic. Toss out an integer and have it returned. Throw an array into storage and get it back. Are you working with dates, booleans or objects? No problem. While it's not rocket science to convert your stored data, having it handled by the interface itself is exceptionally convenient. Javascript supports several primitives, and extending them into localStorage seemed a logical step. Tracking them requires 2 bytes of memory overhead, per key value.
 
 #### Data Protection
-Since localStorage data resides in a client environment the information is not protected from access or tampering. However, data can be rendered unintelligible at the expense of increased memory. Depending on your application, you will have to determine if this is worth the tradeoff. To hide your data, key values may be obfuscated using *safeset/safeget*. A master scramble key may be set globally, or individual scramble keys may be used per each *safeset/safeget* call. Scramble keys can be any value, and of any type (array, boolean, date, float, integer, etc.) Key values that have been *safeset* with an individual scramble key can always be retrieved, but cannot be reconstructed apart from the same individual scramble key with which they were obfuscated. For convenience, the global scramble key is stored in the interface. For security, individual scramble keys are not. The global scramble key may be accessed using *setscramblekey/getscramblekey* methods.
+Since localStorage data resides in a client environment the information is not protected from access or tampering. However, data can be rendered unintelligible at the expense of increased memory. Depending on your application, this may be worth the tradeoff. To hide your data, key values may be obfuscated using *safeset/safeget*. A master scramble key may be set globally, or individual scramble keys may be used per each *safeset/safeget* call. Scramble keys can be any value, and of any type (array, boolean, date, float, integer, etc.) Key values that have been *safeset* with an individual scramble key can always be retrieved, but cannot be reconstructed apart from the same individual scramble key with which they were obfuscated. For convenience, the global scramble key is stored in the interface. For security, individual scramble keys are not. The global scramble key may be accessed using *setscramblekey/getscramblekey* methods.
 
 Scrambling is not encryption. For example, no attempt is made to conceal data lengths by artificially padding to a minimum length. This would be counterproductive to minimizing memory usage.
 
@@ -44,9 +44,9 @@ Since HTML5 localStorage is accessible to all processes running in the browser f
 The domain of operation for HTML5 localStorage is specific to the protocol, host & port; and multiple instances of localDataStorage can be run against the same domain at the same time. It is emoji‑friendly 🤪🤷‍♂️💖👍, which is to say that key names and their values, as well as scramble keys, are multibyte Unicode‑safe. 
 
 ## Dependencies:
-There are external dependencies.
+There are no external dependencies.
 
-Internally, string compression is accomplished with [smaz.js](#refs), while obfuscation is supported by [aleaPRNG](#refs) and [fisherYatesDurstenfeldKnuthShuffle](#refs).
+Internally, string compression is accomplished with [smaz.js](#refs), while obfuscation is supported by [fisherYatesDurstenfeldKnuthShuffle](#refs) and [aleaPRNG](#refs).
 <br>&nbsp;<br>
 
 
