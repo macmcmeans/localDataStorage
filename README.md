@@ -43,12 +43,6 @@ Since HTML5 localStorage is accessible to all processes running in the browser f
 
 The domain of operation for HTML5 localStorage is specific to the protocol, host & port; and multiple instances of localDataStorage can be run against the same domain at the same time. It is emoji‑friendly 🤪🤷‍♂️💖👍, which is to say that key names and their values, as well as scramble keys, are multibyte Unicode‑safe. 
 
-## Dependencies:
-There are no external dependencies.
-
-Internally, string compression is accomplished with [smaz.js](#refs), while obfuscation is supported by [fisherYatesDurstenfeldKnuthShuffle](#refs) and [aleaPRNG](#refs).
-<br>&nbsp;<br>
-
 
 ## Events
 The native localStorage change event is... lacking. Per the whims of your browser, a single page isn't permitted to listen to change events triggered from it. Now, in the event you'd like to listen out for changes, localDataStorage will let you. localDataStorage fires an event on key value changes, such as those made by the *set*, *safeset*, *chopget*, *remove* or *rename* methods. The event returns an activity timestamp and message, as well as expected details about the affected key name with its old and new values. The old and new key value data types are also reported. Code like the following gets it done:
@@ -80,10 +74,21 @@ document.addEventListener(
 <br>&nbsp;<br>
 
 
+## Dependencies:
+There are no external dependencies.
+
+Internally, string compression is accomplished with [smaz.js](#refs), while obfuscation is supported by [fisherYatesDurstenfeldKnuthShuffle](#refs) and [aleaPRNG](#refs).
+<br>&nbsp;<br>
+
+
+## SemVer:
+Recognizing there is no way I can predict the ways a change in my software will affect users, I still use [semantic versioning](https://hynek.me/articles/semver-will-not-save-you/) (semver) to signal those changes. In doing so, I neither suggest nor promise a bug-free upgrade experience.
+<br>&nbsp;<br>
+
+
 ## Wiki:
 Here's a <a href="https://github.com/macmcmeans/localDataStorage.js/wiki">wiki</a> in-progress.
 <br>&nbsp;<br>
-
 
 
 ## Example usage:
@@ -745,9 +750,11 @@ https://github.com/macmcmeans/aleaPRNG
 https://github.com/macmcmeans/fisherYatesDurstenfeldKnuthShuffle
 <br>&nbsp;<br>
 
+
 ## Tested:
 Chrome(ium) browsers (blink engine) and FireFox (gecko); on Win 10 (x64).
 <br>&nbsp;<br>
+
 
 ## Version notes:
 * 1.3.1 - 21 FEB 2022<br>
@@ -772,6 +779,7 @@ Chrome(ium) browsers (blink engine) and FireFox (gecko); on Win 10 (x64).
 * 1.0.0 - 15 MAY 2017<br>
 ``release`` Initial release.
 <br>&nbsp;<br>
+
 
 ## License (BSD)
 Copyright (c) 2017-2022, W. "Mac" McMeans<br>
