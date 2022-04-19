@@ -754,7 +754,7 @@ https://github.com/macmcmeans/fisherYatesDurstenfeldKnuthShuffle
 
 
 ## Tested:
-Chrome(ium) browsers (blink engine) and FireFox (gecko); on Win 10 (x64).
+Chrome(ium) browsers (blink engine) and FireFox (gecko) on Win 10 (x64).
 <br>&nbsp;<br>
 
 
