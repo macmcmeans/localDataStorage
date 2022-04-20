@@ -47,7 +47,7 @@ The domain of operation for HTML5 localStorage is specific to the protocol, host
 
 
 ## Events
-The native localStorage change event is... lacking. Per the whims of the internet gods, a web page in your browser isn't permitted to listen to change events that it triggers. Now, in the event you'd like to listen out for changes, localDataStorage will let you! The interface fires an event on key value changes, such as those made by the *chopget*, *clear*, *forceset*, *remove*, *rename*, *safeset*, *set* and *softset* methods. The event returns an activity timestamp and message, as well as expected details about the affected key name with its old and new values. The old and new key value data types are also reported. A code snippet like the following gets it done:
+The native localStorage change event is... lacking. Per the whims of the internet gods, a web page in your browser isn't permitted to listen to change events that it triggers. Now, in the event you'd like to listen out for changes, localDataStorage will let you! The interface fires an event on key value changes, such as those made by the *chopget*, *clear*, *forceset*, *remove*, *rename*, *safeset*, *set* and *softset* methods. The event returns an activity timestamp and message, as well as expected details about the affected key name with its old and new values. The old and new key value data types are also reported. A code snippet like the following shows what's exposed so you can respond accordingly:
 
 ```js
 function nowICanSeeLocalStorageChangeEvents( e ) {
