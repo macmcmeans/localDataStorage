@@ -79,7 +79,7 @@ document.addEventListener(
 ## Dependencies:
 There are no external dependencies.
 
-Internally, string compression is accomplished with [smaz.js](#refs), while obfuscation is supported by [fisherYatesDurstenfeldKnuthShuffle](#refs) and [aleaPRNG](#refs).
+Internally, string compression is accomplished with [smaz.js](#refs) (someone else's library), while obfuscation is supported by [fisherYatesDurstenfeldKnuthShuffle](#refs) and [aleaPRNG](#refs) (my own libraries).
 <br>&nbsp;<br>
 
 
