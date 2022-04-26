@@ -1,12 +1,12 @@
 # 💼 localDataStorage<br> [![Maintenance](https://img.shields.io/badge/Maintained%3F-Yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity) [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)  ![](https://img.shields.io/github/size/macmcmeans/localdatastorage/localDataStorage-1.3.1.min.js?color=violet&label=Minified) ![](https://img.shields.io/github/v/tag/macmcmeans/localdatastorage?sort=semver&style=flat) ![](https://img.shields.io/badge/UTF‑8%20%F0%9F%98%83-Yes-orange) ![](https://img.shields.io/badge/SU.PPORT.ME-Mac-brightgreen)
 
 ### TL;DR
-Easily use ![](https://img.shields.io/static/v1?label=&message=Array&color=gold) ![](https://img.shields.io/static/v1?label=&message=BigInt&color=gold) ![](https://img.shields.io/static/v1?label=&message=Boolean&color=gold) ![](https://img.shields.io/static/v1?label=&message=Date&color=gold) ![](https://img.shields.io/static/v1?label=&message=Float&color=gold) ![](https://img.shields.io/static/v1?label=&message=Integer&color=gold) ![](https://img.shields.io/static/v1?label=&message=Null&color=gold) ![](https://img.shields.io/static/v1?label=&message=Object&color=gold) ![](https://img.shields.io/static/v1?label=&message=String&color=gold) in localStorage.
+Easily use ![](https://img.shields.io/static/v1?label=&message=Array&color=gold) ![](https://img.shields.io/static/v1?label=&message=BigInt&color=gold) ![](https://img.shields.io/static/v1?label=&message=Boolean&color=gold) ![](https://img.shields.io/static/v1?label=&message=Date&color=gold) ![](https://img.shields.io/static/v1?label=&message=Float&color=gold) ![](https://img.shields.io/static/v1?label=&message=Integer&color=gold) ![](https://img.shields.io/static/v1?label=&message=Object&color=gold) ![](https://img.shields.io/static/v1?label=&message=String&color=gold) in localStorage.
 <br>&nbsp;<br>
 
 ### Highlights
 This is a synchronous javascript interface for the HTML5 localStorage API that--
-1) __transparently sets/gets__ key values using data "types" such as Array, BigInt, Boolean, Date, Float, Integer, null, Object and String;
+1) __transparently sets/gets__ key values using data "types" such as Array, BigInt, Boolean, Date, Float, Integer, Object and String;
 2) __provides__ lightweight __data obfuscation__;
 3) intelligently __compresses strings__ (to save storage space);
 4) __facilitates robust lookup__ including query by key (name), query by (key) value and query by existence (boolean check); 
