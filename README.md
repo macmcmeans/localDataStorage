@@ -7,7 +7,7 @@ Easily use ![](https://img.shields.io/static/v1?label=&message=Array&color=gold)
 <br>&nbsp;<br>
 
 ### Highlights
-This is a synchronous javascript interface for the HTML5 localStorage API that--
+This is a synchronous JavaScript interface for the HTML5 localStorage API that--
 1) __transparently sets/gets__ key values using data "types" such as Array, BigInt, Boolean, Date, Float, Integer, Object and String;
 2) __provides__ lightweight __data obfuscation__;
 3) intelligently __compresses strings__ (to save storage space);
