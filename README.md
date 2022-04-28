@@ -3,7 +3,7 @@
 
 [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)  
 
-![Minified](https://img.shields.io/github/size/macmcmeans/localdatastorage/localDataStorage-1.3.1.min.js?color=violet&label=Minified)](https://raw.githubusercontent.com/macmcmeans/localDataStorage/master/localDataStorage-1.3.1.min.js) 
+[![Minified](https://img.shields.io/github/size/macmcmeans/localdatastorage/localDataStorage-1.3.1.min.js?color=violet&label=Minified)](https://raw.githubusercontent.com/macmcmeans/localDataStorage/master/localDataStorage-1.3.1.min.js) 
 
 ![](https://img.shields.io/github/v/tag/macmcmeans/localdatastorage?sort=semver&style=flat) 
 
