@@ -90,6 +90,13 @@ Recognizing there is no way I can predict how a change in my software will affec
 <br>&nbsp;<br>
 
 
+## Falsy pedantics:
+There is a universe of difference between a variable considered _null_ and one that is _undefined_. In JavaScript, both of these are [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy) and both are primitive types (despite what `typeof null` tells you). Generally, a value of null means the variable has been set to nothing whatsoever, but it has been set nevertheless. In contrast, an undefined variable doesn't have a value because the variable itself doesn't exist (it is undeclared).
+
+With null, the variable is set to no value but if undefined, it isn't set. The distinction is important. The native localStorage API returns _null_ when getting a key that does not exist. However, using localDataStorage to get an undeclared key returns _undefined_, because the key is not present in the store. Further, you could actually store a null value key using localDataStorage if your use case required, but at no time will non-existant keys be returned as nulls. The distinction is just too important.
+<br>&nbsp;<br>
+
+
 ## Wiki:
 Here's a <a href="https://github.com/macmcmeans/localDataStorage.js/wiki">wiki</a> in-progress.
 <br>&nbsp;<br>
