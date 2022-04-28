@@ -5,7 +5,7 @@
 
 [![Minified](https://img.shields.io/github/size/macmcmeans/localdatastorage/localDataStorage-1.3.1.min.js?color=violet&label=Minified)](https://cdn.jsdelivr.net/gh/macmcmeans/localDataStorage@1.3.1/localDataStorage-1.3.1.min.js) 
 
-![](https://img.shields.io/github/v/tag/macmcmeans/localdatastorage?sort=semver&style=flat) 
+[![Latest](https://img.shields.io/github/v/tag/macmcmeans/localdatastorage?sort=semver&style=flat)](https://github.com/macmcmeans/localDataStorage/releases/tag/v1.3.1)
 
 ![](https://img.shields.io/badge/UTF‑8%20%F0%9F%98%83-Yes-orange) 
 
