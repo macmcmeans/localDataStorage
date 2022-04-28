@@ -7,7 +7,7 @@
 
 [![Latest](https://img.shields.io/github/v/tag/macmcmeans/localdatastorage?sort=semver&style=flat)](https://github.com/macmcmeans/localDataStorage/releases/tag/v1.3.1)
 
-![](https://img.shields.io/badge/UTF‑8%20%F0%9F%98%83-Yes-orange) 
+[![](https://img.shields.io/badge/UTF‑8%20%F0%9F%98%83-Yes-orange)](https://www.smashingmagazine.com/2012/06/all-about-unicode-utf8-character-sets/)
 
 [![SU.PPORT.ME](https://img.shields.io/badge/SU.PPORT.ME-Mac-brightgreen)](https://su.pport.me/mac/)
 
