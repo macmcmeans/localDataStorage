@@ -1,15 +1,6 @@
 # 💼 localDataStorage<br>
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-Yes-green.svg)](https://github.com/macmcmeans/localDataStorage/graphs/commit-activity) 
-
-[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)  
-
-[![Minified](https://img.shields.io/github/size/macmcmeans/localdatastorage/localDataStorage-1.3.1.min.js?color=violet&label=Minified)](https://cdn.jsdelivr.net/gh/macmcmeans/localDataStorage@1.3.1/localDataStorage-1.3.1.min.js) 
-
-[![Latest](https://img.shields.io/github/v/tag/macmcmeans/localdatastorage?sort=semver&style=flat)](https://github.com/macmcmeans/localDataStorage/releases/tag/v1.3.1)
-
-[![](https://img.shields.io/badge/UTF‑8%20%F0%9F%98%83-Yes-orange)](https://www.smashingmagazine.com/2012/06/all-about-unicode-utf8-character-sets/)
-
-[![SU.PPORT.ME](https://img.shields.io/badge/SU.PPORT.ME-Mac-brightgreen)](https://su.pport.me/mac/)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-Yes-green.svg)](https://github.com/macmcmeans/localDataStorage/graphs/commit-activity) [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause) [![Minified](https://img.shields.io/github/size/macmcmeans/localdatastorage/localDataStorage-1.3.1.min.js?color=violet&label=Minified)](https://cdn.jsdelivr.net/gh/macmcmeans/localDataStorage@1.3.1/localDataStorage-1.3.1.min.js) [![Latest](https://img.shields.io/github/v/tag/macmcmeans/localdatastorage?sort=semver&style=flat)](https://github.com/macmcmeans/localDataStorage/releases/tag/v1.3.1) 
+[![UTF8](https://img.shields.io/badge/UTF‑8%20%F0%9F%98%83-Yes-orange)](https://www.smashingmagazine.com/2012/06/all-about-unicode-utf8-character-sets/) [![SU.PPORT.ME](https://img.shields.io/badge/SU.PPORT.ME-Mac-brightgreen)](https://su.pport.me/mac/)
 
 ### TL;DR
 Easily use ![](https://img.shields.io/static/v1?label=&message=Array&color=gold) ![](https://img.shields.io/static/v1?label=&message=BigInt&color=gold) ![](https://img.shields.io/static/v1?label=&message=Boolean&color=gold) ![](https://img.shields.io/static/v1?label=&message=Date&color=gold) ![](https://img.shields.io/static/v1?label=&message=Float&color=gold) ![](https://img.shields.io/static/v1?label=&message=Integer&color=gold) ![](https://img.shields.io/static/v1?label=&message=Object&color=gold) ![](https://img.shields.io/static/v1?label=&message=String&color=gold) in localStorage.
