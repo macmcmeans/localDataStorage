@@ -16,16 +16,16 @@ This is a synchronous JavaScript interface for the HTML5 localStorage API that--
 6) responds to __localStorage change events__ on the same page/tab that fired them.
 
 <br>&nbsp;<br>
-Version 1.3.1<br>
+Version 2.0.0<br>
 Author: W. “Mac” McMeans<br>
-Date: 21 FEB 2022
+Date: 1 MAY 2022
 <br>&nbsp;<br>
 
 ## Script tag usage
 ```js
 <script
-    src="https://cdn.jsdelivr.net/gh/macmcmeans/localDataStorage@1.3.1/localDataStorage-1.3.1.min.js"
-    integrity="sha384-Rc8gyCOHcneAsNwEsjnQQLQ6JSS0ZBgZxwr2Qh7z4Knfd5O5GLnD5sm6WSCYKv+2"
+    src="https://cdn.jsdelivr.net/gh/macmcmeans/localDataStorage@master/localDataStorage-2.0.0.min.js"
+    integrity="sha512-LWDNA967l6GIvNL3geN+hC7OMAfLDDUN1RdXUb8lLABMAbmOlbO6HUPJx84rzFH7wEqnJq9AEM59cLzRElv9QQ=="
     crossorigin="anonymous"
 ></script>
 ```
@@ -768,6 +768,11 @@ Chrome(ium) browsers (blink engine) and FireFox (gecko) on Win 10 (x64).
 
 
 ## Version notes:
+* 2.0.0 - 1 MAY 2022<br>
+``release`` Major release. Fixed numerous bugs and refactored code.<br>
+``feature`` Added support for BigInt.
+<br>&nbsp;<br>
+
 * 1.3.1 - 21 FEB 2022<br>
 ``patch`` Fixed a bug where the Clear() method did not fire an event upon deletion of keys.<br>
 ``patch`` Corrected logic in the Rename() method.<br>
