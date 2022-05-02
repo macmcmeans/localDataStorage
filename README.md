@@ -769,8 +769,7 @@ Chrome(ium) browsers (blink engine) and FireFox (gecko) on Win 10 (x64).
 
 ## Version notes:
 * 2.0.0 - 1 MAY 2022<br>
-``release`` Major release. Fixed numerous bugs and refactored code.<br>
-``feature`` Added support for BigInt.
+``release`` Major release. Added support for BigInt. Fixed numerous bugs and refactored code.
 <br>&nbsp;<br>
 
 * 1.3.1 - 21 FEB 2022<br>
