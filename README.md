@@ -27,9 +27,9 @@ This is a synchronous JavaScript interface for the HTML5 localStorage API that--
 6) responds to __localStorage change events__ on the same page/tab that fired them.
 
 <br>&nbsp;<br>
-Version 2.0.0<br>
+Version 2.0.1<br>
 Author: W. “Mac” McMeans<br>
-Date: 1 MAY 2022
+Date: 12 MAY 2022
 <br>&nbsp;<br>
 
 ## Script tag usage
@@ -779,6 +779,12 @@ Chrome(ium) browsers (blink engine) and FireFox (gecko) on Win 10 (x64).
 
 
 ## Version notes:
+* 2.0.1 - 12 MAY 2022<br>
+``patch`` Fixed minor bugs, light refactoring.<br>
+``patch`` Updated custom event to show both the event date and timestamp.<br>
+``update`` Revised the wiki.
+<br>&nbsp;<br>
+
 * 2.0.0 - 1 MAY 2022<br>
 ``release`` Major release. Added support for BigInt. Fixed numerous bugs and refactored code.
 <br>&nbsp;<br>
