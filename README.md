@@ -781,7 +781,7 @@ Chrome(ium) browsers (blink engine) and FireFox (gecko) on Win 10 (x64).
 ## Version notes:
 * 2.0.1 - 12 MAY 2022<br>
 ``patch`` Fixed minor bugs, light refactoring.<br>
-``patch`` Updated custom event to show both the event date and timestamp.<br>
+``patch`` Updated the internal custom event to show both the date and the timestamp.<br>
 ``update`` Revised the wiki.
 <br>&nbsp;<br>
 
