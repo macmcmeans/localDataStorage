@@ -34,9 +34,9 @@ Date: 1 MAY 2022
 
 ## Script tag usage
 ```js
-<script
-    src="https://cdn.jsdelivr.net/gh/macmcmeans/localDataStorage@master/localDataStorage-2.0.0.min.js"
-    integrity="sha512-LWDNA967l6GIvNL3geN+hC7OMAfLDDUN1RdXUb8lLABMAbmOlbO6HUPJx84rzFH7wEqnJq9AEM59cLzRElv9QQ=="
+<script 
+    src="https://cdn.jsdelivr.net/gh/macmcmeans/localDataStorage@master/localDataStorage-2.0.1.min.js" 
+    integrity="sha512-DuArtKkhfgR7MTOpX3cqMyxGSAzvSfba/DHiFP2Lo/sN/8ksrXWZ43OFwMlcpd4Q5WQ4/dtwNzZYR5lWLezlPg==" 
     crossorigin="anonymous"
 ></script>
 ```
