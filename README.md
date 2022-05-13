@@ -66,7 +66,8 @@ The native localStorage change event is... lacking. Per the whims of the interwe
 const nowICanSeeLocalStorageChangeEvents = function( e ) {
     console.log(
         "subscriber: " + e.currentTarget.nodeName + "\n" +
-        "timestamp: "  + e.detail.timestamp       + " (" + new Date( e.detail.timestamp ) + ")" + "\n" +
+        "date: "       + e.detail.date            + "\n" +
+        "timestamp: "  + e.detail.timestamp       + "\n" +
         "prefix: "     + e.detail.prefix          + "\n" +
         "message: "    + e.detail.message         + "\n" +
         "method: "     + e.detail.method          + "\n" +
@@ -77,7 +78,7 @@ const nowICanSeeLocalStorageChangeEvents = function( e ) {
         "old type: "   + e.detail.oldtype         + "\n" +
         "new type: "   + e.detail.newtype
     );
-};
+}
 
 document.addEventListener(
     "localDataStorage"
