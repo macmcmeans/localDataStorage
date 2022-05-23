@@ -40,7 +40,7 @@ Date: 12 MAY 2022
     crossorigin="anonymous"
 ></script>
 ```
-Since the source CDN is a repository over which we have no control, best practice demands using [Subresource Integrity](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) to prevent file tampering. This hash is also backed up to [KeyBase](https://keybase.pub/macadoo/github%20subresource%20integrity/localDataStorage/.)
+Since the source CDN is a repository over which we have no control, best practice demands using [Subresource Integrity](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) to prevent file tampering. This hash is also backed up to [KeyBase](https://keybase.pub/macadoo/github%20subresource%20integrity/localDataStorage/).
 <br>&nbsp;<br>
 
 ## Application:
