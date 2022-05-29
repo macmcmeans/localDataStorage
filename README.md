@@ -56,7 +56,7 @@ Scrambling is not encryption. For example, no attempt is made to conceal data le
 
 <b>Storage Management</b><br>Since HTML5 localStorage is accessible to all processes running in the browser for the domain visited, it is advisable to have an interface that segments access. To that end, the use of prefixed keys is strongly encouraged, and localDataStorage will only read/write/delete its own values. Unlike the HTML5 API, there is no method in the interface to delete all domain keys, only all prefixed keys. At any time, memory usage can be analyzed against key values and key names, for example, using *valbytes* or *keybytes*.
 
-The domain of operation for HTML5 localStorage is specific to the protocol, host & port; and multiple instances of localDataStorage can be run against the same domain at the same time. It is emoji‑friendly 🤪🤷‍♂️💖👍, which is to say that key names and their values, as well as scramble keys, are multibyte Unicode‑safe. 
+The domain of operation for HTML5 localStorage is specific to the protocol, host & port; and multiple instances of localDataStorage can be run against the same domain at the same time. It is emoji‑friendly 🤪🤷‍♂️💖👍, which is to say that key names and their values, as well as scramble keys and storage perfixes, are multibyte Unicode‑safe. 
 
 
 ## Events
