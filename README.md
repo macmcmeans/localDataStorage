@@ -24,7 +24,7 @@ This is a synchronous JavaScript interface for the HTML5 localStorage API that--
 3) intelligently __compresses strings__ (to save storage space);
 4) __facilitates robust lookup__ including query by key (name), query by (key) value and query by existence (boolean check); 
 5) __enforces segmented shared storage__ within the same domain by prefixing keys; and
-6) responds to __localStorage change events__ on the same page/tab that fired them.
+6) allows you to respond to __localStorage change events__ on the same page/tab that fired them.
 
 <br>&nbsp;<br>
 Version 2.0.1<br>
