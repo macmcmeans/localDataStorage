@@ -39,7 +39,7 @@ Date: 12 MAY 2022
 ```js
 <script 
     src="https://cdn.jsdelivr.net/gh/macmcmeans/localDataStorage@master/localDataStorage-2.0.1.min.js" 
-    integrity="sha512-DuArtKkhfgR7MTOpX3cqMyxGSAzvSfba/DHiFP2Lo/sN/8ksrXWZ43OFwMlcpd4Q5WQ4/dtwNzZYR5lWLezlPg==" 
+    integrity="sha512-wXaaGSaiUL4CP25LMAjzUGkmW1vMbExQXy+kfHq98nnzJoKbaWN7cGEfRE8MXDhXiy3iOgd8sHgPX67O6dtFUg==" 
     crossorigin="anonymous"
 ></script>
 ```
