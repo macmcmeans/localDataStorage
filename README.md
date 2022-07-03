@@ -32,7 +32,10 @@ Author: W. “Mac” McMeans<br>
 Date: 12 MAY 2022
 <br>&nbsp;<br>
 
-## Script tag usage
+## Installation
+
+### Include via CDN
+
 ```js
 <script 
     src="https://cdn.jsdelivr.net/gh/macmcmeans/localDataStorage@master/localDataStorage-2.0.1.min.js" 
@@ -110,7 +113,7 @@ With null, the variable is set to no value but if undefined, it isn't set. The d
 
 
 ## Wiki:
-Here's a <a href="https://github.com/macmcmeans/localDataStorage.js/wiki">wiki</a> in-progress.
+Here's the <a href="https://github.com/macmcmeans/localDataStorage.js/wiki">documentation</a> for the interface.
 <br>&nbsp;<br>
 
 
