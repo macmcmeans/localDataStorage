@@ -2,7 +2,7 @@
 
 👉🏻 **Return to main** [**Wiki**](https://github.com/macmcmeans/localDataStorage/wiki/Memory-Requirements)<br><br>
 
-There is a difference between the memory required to store a key value and the memory consumed in the process. For JavaScript, consumption is doubled that of storage.
+There is a difference between the memory required to store a key value and the memory consumed in the process. For JavaScript, _consumption_ is doubled that of _storage_.
 
 The following table illustrates memory storage and consumption, for both a key name and its value, as well as the available methods for determining each:
 
