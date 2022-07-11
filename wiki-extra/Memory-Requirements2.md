@@ -23,4 +23,4 @@ lds-1.| _.set( 'skey1', '["x"]' )_       | skey1 | 5 bytes | 11 bytes | 22 bytes
 <br><br>
 ⑴ includes the namespace prefix (6 bytes, in this example)<br>
 ⑵ includes the data type marker flag (always 1 byte)<br>
-⑶ text compression, even on a small scale, can make an impact (uncompressed this string would consume 22 bytes, not 14)
+⑶ text compression, even on a small scale, can make an impact (if uncompressed this string would consume 22 bytes, not 14)
