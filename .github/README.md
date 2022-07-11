@@ -1,4 +1,4 @@
-# 💼 localDataStorage<br>
+# 💼 localDataStorage2<br>
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-Yes-green.svg)](https://github.com/macmcmeans/localDataStorage/graphs/commit-activity)
 [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 [![Minified](https://img.shields.io/github/size/macmcmeans/localdatastorage/localDataStorage-2.0.1.min.js?color=violet&label=Minified)](https://cdn.jsdelivr.net/gh/macmcmeans/localDataStorage@2.0.1/localDataStorage-2.0.1.min.js)
