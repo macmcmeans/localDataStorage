@@ -39,9 +39,9 @@ Date: 12 MAY 2022
 ### Include via CDN
 
 ```js
-<script 
-    src="https://cdn.jsdelivr.net/gh/macmcmeans/localDataStorage@master/localDataStorage-2.0.1.min.js" 
-    integrity="sha512-wXaaGSaiUL4CP25LMAjzUGkmW1vMbExQXy+kfHq98nnzJoKbaWN7cGEfRE8MXDhXiy3iOgd8sHgPX67O6dtFUg==" 
+<script
+    src="https://cdn.jsdelivr.net/gh/macmcmeans/localDataStorage@master/localDataStorage-3.0.0.js"
+    integrity="sha512-oq6YL3SbviFdhlhZyb0wEkecHChhhtRpX6d7nSVo21KRPTAIX7ZCLPNASQWIuhZNbInesD3CW0xMqp7LOtMUnw=="
     crossorigin="anonymous"
 ></script>
 ```
