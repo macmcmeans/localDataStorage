@@ -29,9 +29,9 @@ This is a synchronous JavaScript interface for the HTML5 localStorage API that--
 8) offers __memory keys__ for the fastest read times possible. 
 
 <br>&nbsp;<br>
-Version 2.0.1<br>
+Version 3.0.0<br>
 Author: W. “Mac” McMeans<br>
-Date: 12 MAY 2022
+Date: 12 AUG 2022
 <br>&nbsp;<br>
 
 ## Installation
