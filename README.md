@@ -117,7 +117,7 @@ With null, the variable is set to no value but if undefined, it isn't set. The d
 
 
 ## Wiki:
-Here's the <a href="https://github.com/macmcmeans/localDataStorage.js/wiki">documentation</a> for the interface.
+Here's the <a href="https://github.com/macmcmeans/localDataStorage.js/wiki">documentation</a> for the interface (95% complete).
 <br>&nbsp;<br>
 
 
