@@ -43,7 +43,8 @@ Date: 12 AUG 2022
     src="https://cdn.jsdelivr.net/gh/macmcmeans/localDataStorage@master/localDataStorage-3.0.0.min.js" 
     integrity="sha512-dEhk3bL90qpWkcHCJDErHbZEY7hGc4ozmKss33HSjwMeSBKBtiw/XVIE7tb5u+iOEp6dTIR9sCWW7J3txeTQIw==" 
     crossorigin="anonymous"
-></script>```
+></script>
+```
 Since the source file is delivered from a repository over which we have no control, best practice demands using [Subresource Integrity](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) to prevent tampering. This hash is also backed up to [KeyBase](https://keybase.pub/macadoo/github%20subresource%20integrity/localDataStorage/).
 <br>&nbsp;<br>
 
