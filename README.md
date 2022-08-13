@@ -787,6 +787,28 @@ Chrome(ium) browsers (blink engine) and FireFox (gecko) on Win 10 (x64).
 
 
 ## Version notes:
+* 3.0.0 - 12 AUG 2022<br>
+``release`` Major release. Added major features, fixed numerous bugs and refactored code.<br>
+``patch`` Consolidated private references to the localStorage.removeItem() method.<br>
+``feature`` Added length property.<br>
+``patch`` Fixed bug where clear() method did not remove all prefixed keys.<br>
+``feature`` Added import/export methods.<br>
+``feature`` Adjusted logic that computes memory storage requirements for keys.<br>
+``patch`` Improved the logic for string compression checks.<br>
+``patch`` Streamlined error checking for localStorage availability prior to instantiation.<br>
+``feature`` Added key copy method.<br>
+``patch`` Improved the efficiency of storage flags by 50%.<br>
+``patch`` Strengthened the obfuscation of data protected by the safeset method.<br>
+``major feature`` Added Memory Keys (and associated methods).<br>
+``major feature`` Added Array Keys (and associated methods).<br>
+``major feature`` Added ability to broadcast change events across the origin.<br>
+``feature`` On startup, the library computes the browser's quota.<br>
+``feature`` Added channel property.<br>
+``feature`` Added backup/restore methods.<br> 
+``feature`` Dates, floats and integers are now automatically stored compressed.<br>
+``update`` Revised the wiki.
+<br>&nbsp;<br>
+
 * 2.0.1 - 12 MAY 2022<br>
 ``patch`` Fixed minor bugs, light refactoring.<br>
 ``patch`` Updated the internal custom event to show both the date and the timestamp.<br>
