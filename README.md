@@ -2,7 +2,7 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-Yes-green.svg)](https://github.com/macmcmeans/localDataStorage/graphs/commit-activity)
 [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 [![Minified](https://img.shields.io/github/size/macmcmeans/localdatastorage/localDataStorage-3.0.0.min.js?color=violet&label=Minified)](https://cdn.jsdelivr.net/gh/macmcmeans/localDataStorage@3.0.0/localDataStorage-3.0.0.min.js)
-[![Latest](https://img.shields.io/github/v/tag/macmcmeans/localdatastorage?sort=semver&style=flat)](https://github.com/macmcmeans/localDataStorage/releases/tag/v3.0.0) 
+[![Latest](https://img.shields.io/github/v/tag/macmcmeans/localdatastorage?sort=semver&style=flat)](https://github.com/macmcmeans/localDataStorage/releases/tag/v3.1.0) 
 [![UTF8](https://img.shields.io/badge/UTF‑8%20%F0%9F%98%83-Yes-orange)](https://www.smashingmagazine.com/2012/06/all-about-unicode-utf8-character-sets/)
 [![SU.PPORT.ME](https://img.shields.io/badge/SU.PPORT.ME-Mac-brightgreen)](https://su.pport.me/mac/)
 
