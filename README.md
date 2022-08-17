@@ -26,7 +26,7 @@ This is a synchronous JavaScript interface for the HTML5 localStorage API that--
 5) __enforces segmented shared storage__ within the same domain by prefixing keys;
 6) allows you to respond to __localStorage change events__ on the same page/tab that fired them;
 7) __broadcasts__ change events across the origin for the benefit of other windows/tabs; and
-8) offers __Memory Keys__ for the fastest read times possible. 
+8) offers __Memory Keys__ (that can be backed up to disk) for the fastest read times possible. 
 
 <br>&nbsp;<br>
 Version 3.0.0<br>
