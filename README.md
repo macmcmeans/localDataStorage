@@ -773,8 +773,6 @@ Here's the <a href="https://github.com/macmcmeans/localDataStorage.js/wiki">docu
 
 
 ## REFS:
-https://github.com/personalcomputer/smaz.js
-
 https://github.com/macmcmeans/aleaPRNG
 
 https://github.com/macmcmeans/fisherYatesDurstenfeldKnuthShuffle
