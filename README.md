@@ -25,8 +25,9 @@ This is a synchronous JavaScript interface for the HTML5 localStorage API that--
 4) __facilitates robust lookup__ including query by key (name), query by (key) value and query by existence (boolean check); 
 5) __enforces segmented shared storage__ within the same domain by prefixing keys;
 6) allows you to respond to __localStorage change events__ on the same page/tab that fired them;
-7) __broadcasts__ change events across the origin for the benefit of other windows/tabs; and
-8) offers __Memory Keys__ (that can be backed up to disk) for the fastest read times possible. 
+7) __broadcasts__ change events across the origin for the benefit of other windows/tabs;
+8) lets you __easily work with arrays__ using dedicated Array Keys; and
+9) offers __Memory Keys__ (that can be backed up to disk) for the fastest read times possible. 
 
 <br>&nbsp;<br>
 Version 3.0.0<br>
@@ -65,7 +66,7 @@ The domain of operation for HTML5 localStorage is specific to the protocol, host
 
 
 ## Events
-The native localStorage change event is... lacking. Per the misguided whims of the interweb gods, a web page in your browser isn't permitted to listen to change events that it alone triggers. However, in the event you'd like to keep an ear out for changes, localDataStorage will let you. The interface fires a custom event on key value changes, such as those made by the *chopget*, *clear*, *forceset*, *remove*, *rename*, *safeset*, *set* and *softset* methods. The event returns an activity timestamp and message, as well as expected details about the affected key with its old and new values (and old and new data types, etc.) This code snippet shows what's exposed so you can respond accordingly:
+The native localStorage change event is... lacking. Per the misguided whims of the interweb gods, a web page in your browser isn't permitted to listen to change events that it alone triggers. However, in the event you'd like to keep an ear out for changes, localDataStorage will let you. The interface fires a custom event on key value changes, such as those made by the *chopget*, *clear*, *forceset*, *remove*, *rename*, *safeset*, *set* and *softset* methods. The event returns an activity timestamp and message, as well as expected details about the affected key with its old and new values (and old and new data types, etc.) Insert your own function here to catch the changes. This code snippet shows what's exposed so you can respond accordingly:
 
 ```js
 const nowICanSeeLocalStorageChangeEvents = function( e ) {
@@ -85,6 +86,9 @@ const nowICanSeeLocalStorageChangeEvents = function( e ) {
         "old base: "   + e.detail.oldbase         + "\n" +
         "new base: "   + e.detail.newbase
     );
+
+    // respond to key change by passing key name
+    myCustomChangeFunction( e.detail.oldkey ); 
 }
 
 document.addEventListener(
