@@ -109,7 +109,7 @@ Internally, obfuscation is supported by [fisherYatesDurstenfeldKnuthShuffle](#re
 
 
 ## SemVer:
-Recognizing there is no way I can predict how a change in my software will affect users, I still use [semantic versioning](https://semver.org) (semver) to signal those changes. Per [Hyrum’s Law](https://hynek.me/articles/semver-will-not-save-you/), I gently suggest you may enjoy, but I do not promise you will actually have, a bug-free upgrade experience.
+Recognizing there is no way I can predict how a change in my software will affect users, I still use [semantic versioning](https://semver.org) (semver) to signal those changes. Per [Hyrum’s Law](https://hynek.me/articles/semver-will-not-save-you/), I gently suggest you may enjoy, but I do not promise you will actually have a bug-free upgrade experience.
 <br>&nbsp;<br>
 
 
