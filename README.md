@@ -111,14 +111,14 @@ Internally, obfuscation is supported by [fisherYatesDurstenfeldKnuthShuffle](#re
 
 
 ## SemVer:
-Recognizing there is no way I can predict how a change in my software will affect users, I still use [semantic versioning](https://semver.org) (semver) to signal those changes.
+Recognizing there is no way I can predict how a change in my software will affect users, I still use [semantic versioning](https://archive.ph/Z02ta) (semver) to signal those changes.
 
-Per [Hyrum’s Law](https://hynek.me/articles/semver-will-not-save-you/), I gently suggest you may enjoy, but I do not promise you will actually have a bug-free upgrade experience.
+Per [Hyrum’s Law](https://archive.ph/IGprL), I gently suggest you may enjoy, but I do not promise you will actually have a bug-free upgrade experience.
 <br>&nbsp;<br>
 
 
 ## Falsy pedantics:
-There is a universe of difference between a variable considered _null_ and one that is _undefined_. In JavaScript, both of these are [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy) and both are primitive types (despite what `typeof null` tells you). Yet they are also quite distinct.
+There is a universe of difference between a variable considered _null_ and one that is _undefined_. In JavaScript, both of these are [falsy](https://archive.ph/PCDvQ) and both are primitive types (despite what `typeof null` tells you). Yet they are also quite distinct.
 
 A value of null means the variable has been set to nothing whatsoever, but it has been set nevertheless.
 
