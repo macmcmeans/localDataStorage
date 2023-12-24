@@ -116,7 +116,9 @@ Recognizing there is no way I can predict how a change in my software will affec
 
 
 ## Falsy pedantics:
-There is a universe of difference between a variable considered _null_ and one that is _undefined_. In JavaScript, both of these are [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy) and both are primitive types (despite what `typeof null` tells you). Yet they are also quite distinct. A value of null means the variable has been set to nothing whatsoever, but it has been set nevertheless.
+There is a universe of difference between a variable considered _null_ and one that is _undefined_. In JavaScript, both of these are [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy) and both are primitive types (despite what `typeof null` tells you). Yet they are also quite distinct.
+
+A value of null means the variable has been set to nothing whatsoever, but it has been set nevertheless.
 
 In contrast, an undefined variable has no value because the variable itself doesn't exist (it is undeclared).
 
