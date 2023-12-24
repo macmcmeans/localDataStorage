@@ -48,7 +48,7 @@ Date: 12 AUG 2022
 ```
 Since the source file is delivered from a repository over which we have no control, best practices demand we do not trust it. Thus we use [Subresource Integrity](https://archive.ph/ll97b) (SRI) to prevent tampering.
 
-Unlike the [BrowseAloud story](https://archive.ph/vuKft), my library is a static resource which can be fully protected by SRI.
+Unlike the [BrowseAloud story](https://archive.ph/vuKft), my library is a static, self-contained resource which can be fully protected by SRI.
 <br>&nbsp;<br>
 
 ## Application:
