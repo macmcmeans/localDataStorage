@@ -35,7 +35,7 @@ Author: W. “Mac” McMeans<br>
 Date: 12 AUG 2022
 <br>&nbsp;<br>
 
-## Installation
+## Trusted Installation
 
 ### Include via CDN
 
@@ -46,7 +46,7 @@ Date: 12 AUG 2022
     crossorigin="anonymous"
 ></script>
 ```
-Since the source file is delivered from a repository over which we have no control, best practice demands using [Subresource Integrity](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) to prevent tampering. This hash is also backed up to [KeyBase](https://keybase.pub/macadoo/github%20subresource%20integrity/localDataStorage/).
+Since the source file is delivered from a repository over which we have no control, best practices demand we do not trust it. Thus we use [Subresource Integrity](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) (SRI) to prevent tampering. Unlike the [BrowseAloud story](https://archive.ph/vuKft), this is a static resource which can be fully protected by SRI.
 <br>&nbsp;<br>
 
 ## Application:
